@@ -8,15 +8,49 @@
 </head>
 <body class="page">
     <header class="header page__header">
-
+      <h1 class="header__title">Гражданские инициативы</h1>
     </header>
 
     <main class="main page__content">
+      <section class="section page__section initiatives initiativesCommon">
+        <a class="link" href="#">
+          <h2 class="section__title">Инициативы</h2>
+        </a>
+        <ul class="initiatives__list initiativesCommon__list"></ul>
+      </section>
       
+      <section class="section page__section initiatives initiativesCustom">
+        <a class="link" href="#">
+          <h2 class="section__title">Мои инициативы</h2>
+        </a>
+        <ul class="initiatives__list initiativesCustom__list"></ul>
+      </section>
     </main>
 
-    <footer class="footer page__footer">
+    <template class="templeteInitiativeCard">
+      <li class="initiatives__item">
+        <article class="initiativeCard">
+          <figure class="initiativeCard__figure">
+            <div class="initiativeCard__boxImage">
+              <img class="initiativeCard__image" src="#" alt="photo">
+            </div>
+            <figcaption class="initiativeCard__figcaption">
+              <h3 class="initiativeCard__title"></h3>
+              <p class="initiativeCard__text"></p>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+    </template>
 
+    <footer class="footer page__footer">
+      <a class="link" href="#">
+        <button class="button footer__button" type="button">Создать иниативу</button>
+      </a>
+      <div class="footer__line">
+      </div>
     </footer>
+
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
