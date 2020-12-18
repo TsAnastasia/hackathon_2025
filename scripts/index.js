@@ -1,12 +1,15 @@
+//TO DO: data from server
 const commonInitiatives = [
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега sdjkgacfjkdsbv bkjsahdvjked basfvjk;  haejscfwkd.as n.ck safhkwejfcasnfksdjf cdsa cfjksdcsn.fckdlsv  cdsfvkjwasdfc sdakbfvjkdaskjvc  уборка снега"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
+  {linkImage: "", title: "Уборка снега миспас арсорп ьсппь ", description: "Уборка снега sdjkgacfjkdsbv bkjsahdvjked basfvjk;  haejscfwkd.as n.ck safhkwejfcasnfksdjf cdsa cfjksdcsn.fckdlsv  cdsfvkjwasdfc sdakbfvjkdaskjvc  уборка снега", id: "2020-12-18-000001", categoryId: "000-001", customerId: "001-000-020"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-18-000002", categoryId: "000-002", customerId: "002-002-020"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000003", categoryId: "000-001", customerId: "001-000-032"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000004", categoryId: "000-001", customerId: "002-002-020"},
 ];
 
+//TO DO: data from server, customerId: "002-002-020"
 const customInitiatives = [
-  {linkImage: "", title: "Уборка", description: "Уборка снега уборка снега"},
-  {linkImage: "", title: "снега", description: "Уборка снега уборка снега"}
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-18-000002", categoryId: "000-002"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000004", categoryId: "000-001"},
 ];
 
 const page = document.querySelector('.page');
@@ -36,15 +39,11 @@ const createInitiativeCard = (initiative) => {
   return newCard;
 };
 
-const addCardToBegin = (cardsContainer, card) => {
-  cardsContainer.prepend(card);
-};
-
-const addInitialCards = (initialCards, container) => {
-  initialCards.reverse().forEach((item) => { 
-    addCardToBegin(container, createInitiativeCard(item));
+const addInitiativeCards = (cards, container) => {
+  cards.reverse().forEach((item) => { 
+    container.prepend( createInitiativeCard(item) );
   });
 };
 
-addInitialCards(commonInitiatives, commonCardsContainer);
-addInitialCards(customInitiatives, customCardsContainer);
+addInitiativeCards(commonInitiatives, commonCardsContainer);
+addInitiativeCards(customInitiatives, customCardsContainer);

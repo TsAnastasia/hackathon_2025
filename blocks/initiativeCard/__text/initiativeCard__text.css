@@ -5,7 +5,11 @@
   line-height: 16px;
   font-style: normal;
   font-weight: 400;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: -o-ellipsis-lastline;
+  word-break: break-word;
+  white-space: normal;
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление инициативы</title>
+  <link rel="stylesheet" href="./pages/addInitiative.css">
+</head>
+<body class="page">
+    <header class="header page__header">
+      <h1 class="header__title">Гражданские инициативы</h1>
+    </header>
+
+    <main class="main page__content">
+      <nav class="page__section nav">
+        <ul class="nav__list">
+          <li>
+            <a class="link nav__link" href="./index.html">
+              <img src="./images/home.svg" alt="Главная">
+            </a>
+          </li>
+          <li class="nav__item">
+            <span class="nav__link">&gt;</span>
+          </li>
+          <li class="nav__item">
+            <button class="link nav__link nav__link_type_category" href="#">Категории</button>
+          </li>
+          <li class="nav__item">
+            <span class="nav__link">&gt;</span>
+          </li>
+          <li class="nav__item">
+            <p class="link nav__link nav__link_disable nav__link_type_initiative" href="#">Добавление инициативы</p>
+          </li>
+        </ul>
+      </nav>
+      
+      <section class="section page__section categories">
+        <h2 class="section__title">Выберете категорию</h2>
+        <ul class="categories__list"></ul>
+      </section>
+
+      <section class="section page__section addInitiative section_hidden">
+        <form class="form" name="addInitiative" novalidate>
+          <h2 class="section__title">Добавление инициативы</h2>
+          <input class="form__input" name="initiativeTitle" type="text" placeholder="Название" required>
+          <select class="form__input" name="initiativeType">
+            <option class="form__option form__option_initial">Тип инициативы</option>
+            <option class="form__option" value="complaint">Жалоба</option>
+            <option class="form__option" value="offer">Предложение</option>
+          </select>
+          <textarea class="form__input form__input_type_textarea" name="comment" placeholder="Ваш комментарий" required></textarea>
+          <fieldset class="form__fieldset">
+            <button class="form__button form__button_type_image" type="button"></button>
+            <button class="form__button form__button_type_file" type="button"></button>
+            <button class="form__button form__button_type_position" type="button"></button>
+          </fieldset>
+          <ul class="files__list">
+          </ul>
+          <!-- disabled -->
+          <button class="button" type="submit">Отправить/подать инициативу</button>
+        </form>
+      </section>
+
+      <section class="section success section_hidden">
+        <h2 class="section__title">Инициатива успешно создана</h2>
+        <p class="section__text">скоро она пройдет модерацию и будет опубликована</p>
+        <a class="button" href="./index.html">Перейти на главную</a>
+      </section>
+
+    </main>
+
+    <template class="templeteCategoryCard">
+      <li class="categories__item">
+        <button class="categoryCard" type="button">
+          <figure class="categoryCard__figure">
+            <div class="categoryCard__boxImage">
+              <img class="categoryCard__image" src="#" alt="photo">
+            </div>
+            <figcaption class="categoryCard__figcaption">
+              <h3 class="categoryCard__title"></h3>
+            </figcaption>
+          </figure>
+        </button>
+      </li>
+    </template>
+
+    <template class="templateFileIcon">
+      <li class="files__item">
+        <img class="files__icon">
+      </li>
+    </template>
+    
+    <footer class="footer page__footer">
+    </footer>
+
+    <script src="./scripts/addInitiative.js"></script>
+</body>
+</html>

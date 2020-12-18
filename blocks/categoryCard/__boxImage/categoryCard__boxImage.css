@@ -1,0 +1,10 @@
+.categoryCard__boxImage{
+  background-color: #a9d4ed;
+  border-radius: 8px;
+}
+
+.categoryCard__boxImage::after{
+  content: "";
+  padding-bottom: 70%;
+  display: block;
+}

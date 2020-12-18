@@ -1,0 +1,29 @@
+@import url("../vendor/normalize.css");
+
+@import url("../blocks/page/page.css");
+@import url("../blocks/page/__header/page__header.css");
+@import url("../blocks/page/__section/page__section.css");
+@import url("../blocks/section/_hidden/section_hidden.css");
+@import url("../blocks/page/__footer/page__footer.css");
+
+@import url("../blocks/header/header.css");
+@import url("../blocks/section/__title/section__title.css");
+@import url("../blocks/link/link.css");
+@import url("../blocks/button/button.css");
+
+@import url("../blocks/nav/nav.css");
+@import url("../blocks/nav/__list/nav__list.css");
+@import url("../blocks/nav/__link.css/nav__link.css");
+@import url("../blocks/nav/__link.css/_disable/nav__link_disable.css");
+
+@import url("../blocks/categories/__list/categories__list.css");
+
+@import url("../blocks/categoryCard/__figure/categoryCard.css");
+@import url("../blocks/categoryCard/__figure/categoryCard__figure.css");
+@import url("../blocks/categoryCard/__boxImage/categoryCard__boxImage.css");
+@import url("../blocks/categoryCard/__figcaption/categoryCard__figcaption.css");
+@import url("../blocks/categoryCard/__title/categoryCard__title.css");
+
+@import url("../blocks/form/form.css");
+@import url("../blocks/form/__input/form__input.css");
+@import url("../blocks/form/__input/_type/form__input_type_textarea.css");
