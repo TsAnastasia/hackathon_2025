@@ -1,0 +1,10 @@
+.menu__link{
+  margin: 10px;
+  padding: 0;
+  display: block;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  color: #004b76;
+}

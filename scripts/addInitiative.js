@@ -5,7 +5,6 @@ const categories = [
   {linkImage: "", title: "Фонарь", id: "000-003"},
 ];
 
-const page = document.querySelector('.page');
 const templaleInitiativeCard = page.querySelector('.templeteCategoryCard').content;
 const sections = [...page.querySelectorAll('.section')];
 const categoriesSection = page.querySelector('.categories');

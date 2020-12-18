@@ -1,0 +1,5 @@
+.header__rowButtons{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 6px;
+}

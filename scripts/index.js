@@ -12,7 +12,6 @@ const customInitiatives = [
   {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000004", categoryId: "000-001"},
 ];
 
-const page = document.querySelector('.page');
 const templaleInitiativeCard = page.querySelector('.templeteInitiativeCard').content;
 const commonCardsContainer = page.querySelector('.initiativesCommon__list');
 const customCardsContainer = page.querySelector('.initiativesCustom__list');
