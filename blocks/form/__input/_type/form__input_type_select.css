@@ -1,0 +1,9 @@
+.form__input_type_select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-image: url("../../../../images/select-caret.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+}

@@ -1,3 +1,22 @@
 .form__input{
+  margin: 15px 0 0;
+  padding: 10px;
   border: 0;
+  outline: 0;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #A9d4ed;
+  color: #004B76;
+}
+
+.form__input::placeholder{
+  color: #0087d5;
+  opacity: 0.5;
+}
+
+.form__input::-ms-input-placeholder{
+  color: #0087d5;
+  opacity: 0.5;
 }

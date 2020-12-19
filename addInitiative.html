@@ -75,20 +75,23 @@
         <form class="form" name="addInitiative" novalidate>
           <h2 class="section__title">Добавление инициативы</h2>
           <input class="form__input" name="initiativeTitle" type="text" placeholder="Название" required>
-          <select class="form__input" name="initiativeType">
-            <option class="form__option form__option_initial">Тип инициативы</option>
+          <select class="form__input form__input_type_select" name="initiativeType">
             <option class="form__option" value="complaint">Жалоба</option>
             <option class="form__option" value="offer">Предложение</option>
           </select>
-          <textarea class="form__input form__input_type_textarea" name="comment" placeholder="Ваш комментарий" required></textarea>
+          <textarea class="form__input form__input_type_textarea" name="comment" placeholder="Ваш комментарий" rows="6" required></textarea>
           <fieldset class="form__fieldset">
-            <button class="form__button form__button_type_image" type="button"></button>
-            <button class="form__button form__button_type_file" type="button"></button>
+            <div class="form__rowButtoms">
+              <button class="form__button form__button_type_image" type="button"></button>
+              <button class="form__button form__button_type_file" type="button"></button>
+            </div>
             <button class="form__button form__button_type_position" type="button"></button>
           </fieldset>
           <ul class="files__list">
           </ul>
-          <button class="button" type="submit">Отправить/подать инициативу</button>
+          <div class="page__downButton">
+            <button class="button button_big" type="submit">Отправить/подать инициативу</button>
+          </div>
         </form>
       </section>
 
