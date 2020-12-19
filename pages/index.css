@@ -30,6 +30,10 @@
 @import url("../blocks/button/button.css");
 @import url("../blocks/button/_big/button_big.css");
 
+@import url("../blocks/search/search.css");
+@import url("../blocks/search/__input/search__input.css");
+@import url("../blocks/search/__filter/search__filter.css");
+
 @import url("../blocks/initiatives/__list/initiatives__list.css");
 
 @import url("../blocks/initiativeCard/initiativeCard.css");

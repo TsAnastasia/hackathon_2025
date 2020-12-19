@@ -1,12 +1,13 @@
 .form__input{
   margin: 15px 0 0;
   padding: 10px;
-  border: 0;
-  outline: 0;
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
   font-weight: 500;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
   background-color: #A9d4ed;
   color: #004B76;
 }

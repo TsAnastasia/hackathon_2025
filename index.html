@@ -10,17 +10,17 @@
   <div class="page__content">
     <header class="header page__header">
       <div class="header__rowButtons">
-        <button class="header__button header__button_type_entry" type="button">
+        <button class="header__button header__button_type_entry header__button_hidden" type="button">
           <span class="header__buttonIcon header__buttonIcon_type_entry">
           </span>
           <span class="header__buttonText">Войти</span>
         </button>
-        <button class="header__button header__button_type_profile header__button_hidden" type="button">
+        <button class="header__button header__button_type_profile" type="button">
           <span class="header__buttonIcon header__buttonIcon_type_profile">
           </span>
           <span class="header__buttonText">Профиль</span>
         </button>
-        <button class="header__button header__button_type_alert header__button_hidden" type="button">
+        <button class="header__button header__button_type_alert" type="button">
           <span class="header__buttonIcon header__buttonIcon_type_alert">
           </span>
           <span class="header__buttonText">Оповещения</span>
@@ -46,6 +46,13 @@
     <main class="main">
       <section class="section page__section intro">
         <h1 class="page__title">Описание сайта</h1>
+      </section>
+
+      <section class="section page__section" aria-label="поиск">
+        <form class="search" name="search">
+          <input class="search__input" type="text">
+          <button class="search__filter" type="button"></button>
+        </form>
       </section>
     
       <section class="section page__section initiatives initiativesCommon">
