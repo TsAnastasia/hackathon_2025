@@ -1,8 +1,8 @@
 //TO DO: data from server
 const categories = [
-  {linkImage: "", title: "Дом", id: "000-001"},
-  {linkImage: "", title: "Улица", id: "000-002"},
-  {linkImage: "", title: "Фонарь", id: "000-003"},
+  {linkImage: "", title: "Дом"},
+  {linkImage: "", title: "Улица"},
+  {linkImage: "", title: "Фонарь"},
 ];
 
 const templaleInitiativeCard = page.querySelector('.templeteCategoryCard').content;

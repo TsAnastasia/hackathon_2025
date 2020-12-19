@@ -1,15 +1,15 @@
 //TO DO: data from server
 const commonInitiatives = [
-  {linkImage: "", title: "Уборка снега миспас арсорп ьсппь ", description: "Уборка снега sdjkgacfjkdsbv bkjsahdvjked basfvjk;  haejscfwkd.as n.ck safhkwejfcasnfksdjf cdsa cfjksdcsn.fckdlsv  cdsfvkjwasdfc sdakbfvjkdaskjvc  уборка снега", id: "2020-12-18-000001", categoryId: "000-001", customerId: "001-000-020"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-18-000002", categoryId: "000-002", customerId: "002-002-020"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000003", categoryId: "000-001", customerId: "001-000-032"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000004", categoryId: "000-001", customerId: "002-002-020"},
+  {linkImage: "", title: "Уборка снега миспас арсорп ьсппь ", description: "Уборка снега sdjkgacfjkdsbv bkjsahdvjked basfvjk;  haejscfwkd.as n.ck safhkwejfcasnfksdjf cdsa cfjksdcsn.fckdlsv  cdsfvkjwasdfc sdakbfvjkdaskjvc  уборка снега"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
 ];
 
-//TO DO: data from server, customerId: "002-002-020"
+//TO DO: data from server
 const customInitiatives = [
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-18-000002", categoryId: "000-002"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега", id: "2020-12-19-000004", categoryId: "000-001"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
+  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
 ];
 
 const templaleInitiativeCard = page.querySelector('.templeteInitiativeCard').content;
