@@ -43,7 +43,7 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main" aria-label="Добавление инициативы">
       <nav class="nav">
         <ul class="nav__list">
           <li>
@@ -87,7 +87,7 @@
             </div>
             <button class="form__button form__button_type_position" type="button"></button>
           </fieldset>
-          <ul class="files__list">
+          <ul class="form__files">
           </ul>
           <div class="page__downButton">
             <button class="button button_big" type="submit">Отправить/подать инициативу</button>
@@ -95,10 +95,12 @@
         </form>
       </section>
 
-      <section class="section success section_hidden">
-        <h2 class="section__title">Инициатива успешно создана</h2>
-        <p class="section__text">скоро она пройдет модерацию и будет опубликована</p>
-        <a class="button" href="./index.html">Перейти на главную</a>
+      <section class="section page__section success section_hidden">
+        <div class="success__resalt">
+          <h2 class="section__title section__title_center">Инициатива успешно создана</h2>
+          <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
+        </div>
+        <a class="button button_big link success__button" href="./index.html">Перейти на главную</a>
       </section>
     </main>
 
@@ -118,8 +120,8 @@
     </template>
 
     <template class="templateFileIcon">
-      <li class="files__item">
-        <img class="files__icon">
+      <li>
+        <img class="form__fileIcon">
       </li>
     </template>
     

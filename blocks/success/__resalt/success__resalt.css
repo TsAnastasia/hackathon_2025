@@ -1,0 +1,10 @@
+.success__resalt{
+  display: flex;
+  min-height: 230px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../images/icon-success.svg");
+  background-position: 50% 90%;
+  background-repeat: no-repeat;
+}
