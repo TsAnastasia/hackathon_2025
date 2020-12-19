@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление инициативы</title>
+  <link rel="stylesheet" href="./pages/initiative.css">
+</head>
+<body class="page">
+  <div class="page__content">
+    <header class="header page__header">
+      <div class="header__rowButtons">
+        <button class="header__button header__button_type_entry header__button_hidden" type="button">
+          <span class="header__buttonIcon header__buttonIcon_type_entry">
+          </span>
+          <span class="header__buttonText">Войти</span>
+        </button>
+        <button class="header__button header__button_type_profile" type="button">
+          <span class="header__buttonIcon header__buttonIcon_type_profile">
+          </span>
+          <span class="header__buttonText">Профиль</span>
+        </button>
+        <button class="header__button header__button_type_alert" type="button">
+          <span class="header__buttonIcon header__buttonIcon_type_alert">
+          </span>
+          <span class="header__buttonText">Оповещения</span>
+        </button>
+      </div>
+      <button class="header__button header__button_type_menu" type="button">
+        <span class="header__buttonIcon header__buttonIcon_type_menu">
+        </span>
+        <span class="header__buttonText">Меню</span>
+      </button>
+      <nav class="menu header__nav header__nav_hidden">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link link" href="#">Пункт 1</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">Пункт 2</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main" aria-label="Добавление инициативы">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__item link" href="./index.html">
+              <img src="./images/icon-home.svg" alt="Главная">
+            </a>
+          </li>
+          <li>
+            <div class="nav__separator"></div>
+          </li>
+          <li>
+            <button class="nav__item nav__item_type_category" type="button">Категории</button>
+          </li>
+          <li>
+            <div class="nav__separator"></div>
+          </li>
+          <li>
+            <p class="nav__item nav__item_disable">Просмотр инициативы</p>
+          </li>
+        </ul>
+      </nav>
+      
+      <section class="section page__section categories">
+        <h1 class="section__title">Выберете категорию</h1>
+      </section>
+    </main>
+    
+    <footer class="footer page__footer">
+    </footer>
+  </div>
+ 
+  <script src="./scripts/header.js"></script>
+</body>
+</html>

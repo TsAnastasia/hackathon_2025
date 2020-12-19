@@ -17,9 +17,9 @@
 @import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_alert.css");
 @import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_menu.css");
 @import url("../blocks/header/__buttonText/header__buttonText.css");
-
 @import url("../blocks/header/__nav/header__nav.css");
 @import url("../blocks/header/__nav/_hidden/header__nav_hidden.css");
+
 @import url("../blocks/menu/__list/menu__list.css");
 @import url("../blocks/menu/__link/menu__link.css");
 
