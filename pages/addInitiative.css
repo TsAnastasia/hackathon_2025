@@ -30,8 +30,9 @@
 
 @import url("../blocks/nav/nav.css");
 @import url("../blocks/nav/__list/nav__list.css");
-@import url("../blocks/nav/__link.css/nav__link.css");
-@import url("../blocks/nav/__link.css/_disable/nav__link_disable.css");
+@import url("../blocks/nav/__item/nav__item.css");
+@import url("../blocks/nav/__separator/nav__separator.css");
+@import url("../blocks/nav/__item/_disable/nav__item_disable.css");
 
 @import url("../blocks/categories/__list/categories__list.css");
 

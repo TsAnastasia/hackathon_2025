@@ -11,8 +11,8 @@ const categoriesSection = page.querySelector('.categories');
 const addInitiativeSection = page.querySelector('.addInitiative');
 const successSection = page.querySelector('.success');
 const categoriesContainer = page.querySelector('.categories__list');
-const navLinkInitiativeContainer = page.querySelector('.nav__link_type_initiative');
-const navLinkCategoryContainer = page.querySelector('.nav__link_type_category');
+const navLinkInitiativeContainer = page.querySelector('.nav__item_type_initiative');
+const navLinkCategoryContainer = page.querySelector('.nav__item_type_category');
 const formContainer = document.forms.addInitiative;
 
 //category: title, description
@@ -38,7 +38,7 @@ const changeSection = (newSection) =>{
 
 const chooseCategory = (category) => {
   changeSection(addInitiativeSection);
-  navLinkInitiativeContainer.classList.remove('nav__link_disable');
+  navLinkInitiativeContainer.classList.remove('nav__item_disable');
 };
 
 const addCategoryCards = (categories, container) => {
@@ -49,7 +49,7 @@ const addCategoryCards = (categories, container) => {
 
 const backtoCategory = () => {
   changeSection(categoriesSection);
-  navLinkInitiativeContainer.classList.add('nav__link_disable');
+  navLinkInitiativeContainer.classList.add('nav__item_disable');
 };
 
 const submitFormAddInitiative = () => {

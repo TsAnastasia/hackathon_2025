@@ -11,25 +11,25 @@
     <header class="header page__header">
       <div class="header__rowButtons">
         <button class="header__button header__button_type_entry header__button_hidden" type="button">
-          <div class="header__buttonIcon header__buttonIcon_type_entry">
-          </div>
-          <p class="header__buttonText">Войти</p>
+          <span class="header__buttonIcon header__buttonIcon_type_entry">
+          </span>
+          <span class="header__buttonText">Войти</span>
         </button>
         <button class="header__button header__button_type_profile" type="button">
-          <div class="header__buttonIcon header__buttonIcon_type_profile">
-          </div>
-          <p class="header__buttonText">Профиль</p>
+          <span class="header__buttonIcon header__buttonIcon_type_profile">
+          </span>
+          <span class="header__buttonText">Профиль</span>
         </button>
         <button class="header__button header__button_type_alert" type="button">
-          <div class="header__buttonIcon header__buttonIcon_type_alert">
-          </div>
-          <p class="header__buttonText">Оповещения</p>
+          <span class="header__buttonIcon header__buttonIcon_type_alert">
+          </span>
+          <span class="header__buttonText">Оповещения</span>
         </button>
       </div>
       <button class="header__button header__button_type_menu" type="button">
-        <div class="header__buttonIcon header__buttonIcon_type_menu">
-        </div>
-        <p class="header__buttonText">Меню</p>
+        <span class="header__buttonIcon header__buttonIcon_type_menu">
+        </span>
+        <span class="header__buttonText">Меню</span>
       </button>
       <nav class="menu header__nav header__nav_hidden">
         <ul class="menu__list">
@@ -44,24 +44,24 @@
     </header>
 
     <main class="main">
-      <nav class="page__section nav">
+      <nav class="nav">
         <ul class="nav__list">
           <li>
-            <a class="link nav__link" href="./index.html">
+            <a class="nav__item link" href="./index.html">
               <img src="./images/icon-home.svg" alt="Главная">
             </a>
           </li>
-          <li class="nav__item">
-            <span class="nav__link">&gt;</span>
+          <li>
+            <div class="nav__separator"></div>
           </li>
-          <li class="nav__item">
-            <button class="link nav__link nav__link_type_category" href="#">Категории</button>
+          <li>
+            <button class="nav__item nav__item_type_category" type="button">Категории</button>
           </li>
-          <li class="nav__item">
-            <span class="nav__link">&gt;</span>
+          <li>
+            <div class="nav__separator"></div>
           </li>
-          <li class="nav__item">
-            <p class="link nav__link nav__link_disable nav__link_type_initiative" href="#">Добавление инициативы</p>
+          <li>
+            <p class="link nav__item nav__item_disable nav__item_type_initiative">Добавление инициативы</p>
           </li>
         </ul>
       </nav>

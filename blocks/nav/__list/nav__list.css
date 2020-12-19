@@ -1,8 +1,8 @@
 .nav__list{
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
 }
