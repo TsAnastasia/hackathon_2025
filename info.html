@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Личный кабинет</title>
-  <link rel="stylesheet" href="./pages/account.css">
+  <link rel="stylesheet" href="./pages/alert.css">
 </head>
 <body class="page">
   <div class="page__content">
     <header class="header page__header">
       <div class="header__rowButtons">
-        <a class="link header__button header__button_visible" href="./index.html">
+        <a class="link header__button header__button_visible" href="./account.html">
           <div class="header__buttonIcon header__buttonIcon_type_back"></div>
           <p class="header__buttonText">Назад</p>
         </a>
@@ -39,40 +39,18 @@
       </nav>
     </header>
 
-    <main class="main">
-      <section class="section page__section account">
-        <div class="account__header">
-          <h1 class="section__title acount__title">Личный кабинет</h1>
-          <a class="link account__info" href="./info.html">инфро</a>
-        </div>
-        <div class="account__row">
-          <a class="account__button account__button_type_setting" href="./setting.html"></a>
-          <a class="account__button account__button_type_alert" href="./alert.html"></a>
-        </div>
-        <div class="account__label">  
-          <p class="account__welcome">Здравствуйте, <span class="acount__neme">Василий</span></p>
-          <p class="account__person">гражданин</p>
-        </div>
-        <nav class="account__menu">
-          <ul class="account__menuList">
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="./personData.html">Мои данные</a>
-            </li>
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="./personInitiative.html">Мои инициативы</a>
-            </li>
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="./areaInitiative.html">Мой район</a>
-            </li>
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="#"></a>
-            </li>
-          </ul>
-        </nav>
+    <main class="main" aria-label="Добавление инициативы">
+      <section class="page__section simpleSection">
+        <h1 class="simpleSection__header">Информация</h1>
+        <ul class="simpleSection__list">
+          <li class="simpleSection__item">
+
+          </li>
+        </ul>
       </section>
       
       <div class="addInitiative page__downButton">
-        <a class="link button button_big button_type_addInitiative" href="./addInitiative.html">Создать инициативу</a>
+        <a class="link button button_big button_type_addInitiative" href="./account.html">Назад</a>
       </div>
     </main>
     
