@@ -10,25 +10,21 @@
   <div class="page__content">
     <header class="header page__header">
       <div class="header__rowButtons">
-        <button class="header__button header__button_type_entry header__button_hidden" type="button">
-          <span class="header__buttonIcon header__buttonIcon_type_entry">
-          </span>
-          <span class="header__buttonText">Войти</span>
-        </button>
-        <button class="header__button header__button_type_profile" type="button">
-          <span class="header__buttonIcon header__buttonIcon_type_profile">
-          </span>
-          <span class="header__buttonText">Профиль</span>
-        </button>
-        <button class="header__button header__button_type_alert" type="button">
-          <span class="header__buttonIcon header__buttonIcon_type_alert">
-          </span>
-          <span class="header__buttonText">Оповещения</span>
-        </button>
+        <a class="link header__button" href="#">
+          <div class="header__buttonIcon header__buttonIcon_type_back"></div>
+          <p class="header__buttonText">Назад</p>
+        </a>
+        <a class="link header__button header__button_visible" href="./account.html">
+          <div class="header__buttonIcon header__buttonIcon_type_profile"></div>
+          <p class="header__buttonText">Профиль</p>
+        </a>
+        <a class="link header__button header__button_visible" href="#">
+          <div class="header__buttonIcon header__buttonIcon_type_alert"></div>
+          <p class="header__buttonText">Оповещения</p>
+        </a>
       </div>
-      <button class="header__button header__button_type_menu" type="button">
-        <span class="header__buttonIcon header__buttonIcon_type_menu">
-        </span>
+      <button class="header__button header__button_visible" type="button">
+        <span class="header__buttonIcon header__buttonIcon_type_menu"></span>
         <span class="header__buttonText">Меню</span>
       </button>
       <nav class="menu header__nav header__nav_hidden">

@@ -3,8 +3,9 @@
   padding: 0;
   border: 0;
   outline: 0;
+  color: #000;
   background-color: transparent;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
