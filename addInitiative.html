@@ -68,7 +68,7 @@
       </section>
 
       <section class="section page__section addInitiative section_hidden">
-        <form class="form" name="addInitiative" novalidate>
+        <form class="form" name="addInitiative" id="addInitiative" novalidate>
           <h2 class="section__title">Добавление инициативы</h2>
           <input class="form__input" name="initiativeTitle" type="text" placeholder="Название" required>
           <select class="form__input form__input_type_select" name="initiativeType">
@@ -86,9 +86,19 @@
           <ul class="form__files">
           </ul>
           <div class="page__downButton">
-            <button class="button button_big" type="submit">Отправить/подать инициативу</button>
+            <button class="button button_big addInitiative__buttonPrevie" type="button">Продолжить</button>
           </div>
         </form>
+      </section>
+
+      <section class="section page__section section_hidden previe">
+        <h2 class="section__title">Предпросмотр</h2>
+        
+        <div class="page__downButton">
+          <button class="button previe__buttonBack" type="button">Назад</button>
+          <button class="button" type="submit" form="addInitiative">Подать инициативу</button>
+        </div>
+      </form>
       </section>
 
       <section class="section page__section success section_hidden">

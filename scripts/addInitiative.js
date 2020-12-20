@@ -9,11 +9,14 @@ const templaleInitiativeCard = page.querySelector('.templeteCategoryCard').conte
 const sections = [...page.querySelectorAll('.section')];
 const categoriesSection = page.querySelector('.categories');
 const addInitiativeSection = page.querySelector('.addInitiative');
+const previeSection = page.querySelector('.previe');
 const successSection = page.querySelector('.success');
 const categoriesContainer = page.querySelector('.categories__list');
 const navLinkInitiativeContainer = page.querySelector('.nav__item_type_initiative');
 const navLinkCategoryContainer = page.querySelector('.nav__item_type_category');
 const formContainer = document.forms.addInitiative;
+const buttonPrevie = page.querySelector('.addInitiative__buttonPrevie');
+const buttonBack = page.querySelector(".previe__buttonBack");
 
 //category: title, description
 const createCategoryCard = (category) => {
@@ -57,6 +60,12 @@ const submitFormAddInitiative = () => {
   changeSection(successSection);
 };
 
+const showPrevie = () => {
+  
+  changeSection(previeSection);
+}
+
+
 navLinkCategoryContainer.addEventListener('click', () => {
   backtoCategory();
 });
@@ -64,6 +73,14 @@ navLinkCategoryContainer.addEventListener('click', () => {
 formContainer.addEventListener('submit', (evt) => {
   evt.preventDefault();
   submitFormAddInitiative();
+});
+
+buttonPrevie.addEventListener('click', () =>{
+  showPrevie();
+});
+
+buttonBack.addEventListener('click', () =>{
+  changeSection(addInitiativeSection);
 });
 
 addCategoryCards(categories, categoriesContainer);
