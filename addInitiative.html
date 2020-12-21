@@ -11,12 +11,12 @@
     <header class="header page__header">
       <div class="header__buttonsLine">
         <button class="header__button header__button_visible header__button_type_menu" type="button">
-          <div class="header__buttonIcon header__buttonIcon_type_menu"></div>
-          <!-- <p class="header__buttonText">Меню</p> -->
+          <span class="header__buttonIcon header__buttonIcon_type_menu"></span>
+          <span class="header__buttonText">Меню</span>
         </button>
         <button class="header__button header__button_visible header__button_type_search" type="button">
-          <div class="header__buttonIcon header__buttonIcon_type_search"></div>
-          <!-- <p class="header__buttonText">Поиск</p> -->
+          <span class="header__buttonIcon header__buttonIcon_type_search"></span>
+          <span class="header__buttonText">Поиск</span>
         </button>
       </div>
       <nav class="header__menu menu menu_visible">
@@ -50,10 +50,11 @@
             
       <section class="section page__section categories">
         <h2 class="section__title">Выберете категорию</h2>
-        <ul class="categories__list"></ul>
+        <ul class="categories__list">
+        </ul>
       </section>
 
-      <section class="section page__section addInitiative section_hidden">
+      <!-- <section class="section page__section addInitiative section_hidden">
         <form class="form" name="addInitiative" id="addInitiative" novalidate>
           <h2 class="section__title">Добавление инициативы</h2>
           <input class="form__input" name="initiativeTitle" type="text" placeholder="Название" required>
@@ -93,21 +94,15 @@
           <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
         </div>
         <a class="button button_big link success__button" href="./index.html">Перейти на главную</a>
-      </section>
+      </section> -->
     </main>
 
     <template class="templeteCategoryCard">
       <li class="categories__item">
-        <button class="categoryCard" type="button">
-          <figure class="categoryCard__figure">
-            <div class="categoryCard__boxImage">
-              <img class="categoryCard__image" src="#" alt="photo">
-            </div>
-            <figcaption class="categoryCard__figcaption">
-              <h3 class="categoryCard__title"></h3>
-            </figcaption>
-          </figure>
-        </button>
+        <figure class="categories__figure categoryCard">
+          <img class="categoryCard__image" src="#" alt="category-icon">
+          <figcaption class="categoryCard__title"></figcaption>
+        </figure>
       </li>
     </template>
 

@@ -1,0 +1,11 @@
+.categories__item{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.categories__item::before{
+  content: "";
+  display: block;
+  padding-bottom: 110%;
+}
