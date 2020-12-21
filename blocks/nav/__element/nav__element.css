@@ -1,0 +1,26 @@
+.nav__element{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav__element::after{
+  content: "";
+  margin: 0 20px;
+  padding: 0;
+  width: 10px;
+  height: 18px;
+  background-image: url("../../../images/nav-separator.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav__element:last-of-type::after{
+  margin: 0;
+  width: 0;
+  height: 0;
+  background-image: none;
+}

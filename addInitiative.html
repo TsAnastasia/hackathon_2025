@@ -9,59 +9,45 @@
 <body class="page">
   <div class="page__content">
     <header class="header page__header">
-      <div class="header__rowButtons">
-        <a class="link header__button" href="#">
-          <div class="header__buttonIcon header__buttonIcon_type_back"></div>
-          <p class="header__buttonText">Назад</p>
-        </a>
-        <a class="link header__button header__button_visible" href="./account.html">
-          <div class="header__buttonIcon header__buttonIcon_type_profile"></div>
-          <p class="header__buttonText">Профиль</p>
-        </a>
-        <a class="link header__button header__button_visible" href="./alert.html">
-          <div class="header__buttonIcon header__buttonIcon_type_alert"></div>
-          <p class="header__buttonText">Оповещения</p>
-        </a>
+      <div class="header__buttonsLine">
+        <button class="header__button header__button_visible header__button_type_menu" type="button">
+          <div class="header__buttonIcon header__buttonIcon_type_menu"></div>
+          <!-- <p class="header__buttonText">Меню</p> -->
+        </button>
+        <button class="header__button header__button_visible header__button_type_search" type="button">
+          <div class="header__buttonIcon header__buttonIcon_type_search"></div>
+          <!-- <p class="header__buttonText">Поиск</p> -->
+        </button>
       </div>
-      <button class="header__button header__button_visible header__button_type_menu" type="button">
-        <span class="header__buttonIcon header__buttonIcon_type_menu"></span>
-        <span class="header__buttonText">Меню</span>
-      </button>
-      <nav class="menu header__nav header__nav_hidden">
+      <nav class="header__menu menu menu_visible">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link link" href="#">Пункт 1</a>
+            <a class="menu__link" href="#">Пункт 1</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#">Пункт 2</a>
+            <a class="menu__link" href="#">Пункт 2</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <!-- <li class="nav__element">
+            <a class="nav__item" href="./index.html">
+              <img src="./images/icons/home.svg" alt="Главная">
+            </a>
+          </li> -->
+          <li class="nav__element">
+            <button class="nav__item nav__item_type_category" type="button">Категории</button>
+          </li>
+          <li class="nav__element">
+            <p class="nav__item nav__item_disable nav__item_type_initiative">Добавление инициативы</p>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main" aria-label="Добавление инициативы">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li>
-            <a class="nav__item link" href="./index.html">
-              <img src="./images/icon-home.svg" alt="Главная">
-            </a>
-          </li>
-          <li>
-            <div class="nav__separator"></div>
-          </li>
-          <li>
-            <button class="nav__item nav__item_type_category" type="button">Категории</button>
-          </li>
-          <li>
-            <div class="nav__separator"></div>
-          </li>
-          <li>
-            <p class="nav__item nav__item_disable nav__item_type_initiative">Добавление инициативы</p>
-          </li>
-        </ul>
-      </nav>
-      
+            
       <section class="section page__section categories">
         <h2 class="section__title">Выберете категорию</h2>
         <ul class="categories__list"></ul>

@@ -1,10 +1,10 @@
 .page__header{
+  margin: 0 auto;
+  padding: 0;
+  max-width: 768px;
   position: fixed;
   top: 0;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 768px;
-  min-height: 70px;
-  background-color: #fff;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }

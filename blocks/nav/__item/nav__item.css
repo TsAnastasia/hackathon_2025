@@ -1,17 +1,16 @@
-.nav__item{
+ .nav__item{
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   text-align: center;
-  max-width: 120px;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.04em;
+  font-size: 8px;
+  line-height: 10px;
   font-style: normal;
-  font-weight: 400;
-  color: #0087d5;
+  font-weight: 500;
+  text-transform: uppercase;
   border: 0;
   outline: 0;
   background-color: transparent;
+  color: #19488e;
 }

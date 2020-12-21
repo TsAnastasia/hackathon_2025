@@ -1,4 +1,4 @@
 .page__content{
-  position: relative;
-  padding: 60px 0 70px;
+  position: absolute;
+  padding: 110px 0 70px;
 }
