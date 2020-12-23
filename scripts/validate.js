@@ -63,9 +63,6 @@ const toggleButtonPreview = (formElement) => {
 
 const enableValidation = () => {
   formElement = document.querySelector(settingValidate.formSelector);
-  formElement.addEventListener('submit', function (evt) {
-    evt.preventDefault();
-  });   
   const inputList = [...formElement.querySelectorAll(settingValidate.inputSelector)];
   inputList.forEach((inputElement) => {
     inputElement.addEventListener('input', () =>{

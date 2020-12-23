@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Добавление инициативы</title>
-  <link rel="stylesheet" href="./pages/addInitiative.css">
+  <link rel="stylesheet" href="./pages/createInitiative.css">
 </head>
 <body class="page">
   <div class="page__content">
@@ -48,7 +48,7 @@
       </section>
 
       <section class="section page__section section_hidden inputData">
-        <form class="form" name="addInitiative" id="addInitiative" novalidate>
+        <form class="form" name="addInitiative" novalidate>
           <h2 class="section__title">Добавление инициативы</h2>
           <input class="form__item form__item_type_category" type="text" name="category" value="Госучереждения и общественные организации" readonly>
           <input class="form__item form__item_required" type="text" name="title" placeholder="Название" autocomplete="off" maxlength="30" pattern="^[А-Яа-яЁё\s]+$" required>
@@ -58,12 +58,13 @@
             <option value="offer">Предложение</option>
           </select>
           <div class="form__textarea">
-            <textarea class="form__item form__item_required form__item_type_textarea" type="text" name="comment" placeholder="Ваш комментарий" rows="6" minlength="7" maxlength="140" pattern="^[А-Яа-яЁё\s]+$" required></textarea>
+            <textarea class="form__item form__item_required form__item_type_textarea" name="comment" placeholder="Ваш комментарий" rows="6" maxlength="140" required></textarea>
             <p class="form__error form__error_inside form__error_type_comment"></p>
             <div class="form__preview form__preview_hidden"></div>
           </div>
           <fieldset class="form__fieldset">
             <div class="form__rowButtons">
+              <!--TO DO: add files -->
               <button class="form__button form__button_type_image" type="button"></button>
               <button class="form__button form__button_type_foto" type="button"></button>
               <button class="form__button form__button_type_file" type="button"></button>
@@ -78,17 +79,7 @@
         </form>
       </section>
 
-      <!-- <section class="section page__section section_hidden previe">
-        <h2 class="section__title">Предпросмотр</h2>
-        
-        <div class="page__downButton">
-          <button class="button previe__buttonBack" type="button">Назад</button>
-          <button class="button" type="submit" form="addInitiative">Подать инициативу</button>
-        </div>
-      </form>
-      </section>
-
-      <section class="section page__section success section_hidden">
+      <!--<section class="section page__section success section_hidden">
         <div class="success__resalt">
           <h2 class="section__title section__title_center">Инициатива успешно создана</h2>
           <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
@@ -118,6 +109,7 @@
  
   <script src="./scripts/header.js"></script>
   <script src="./scripts/validate.js"></script>
-  <script src="./scripts/addInitiative.js"></script>
+  <script src="./scripts/dataCategory.js"></script>
+  <script src="./scripts/createInitiative.js"></script>
 </body>
 </html>

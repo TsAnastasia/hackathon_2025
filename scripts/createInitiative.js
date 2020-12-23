@@ -1,17 +1,3 @@
-//TO DO: data from server
-const categories = [
-  {name: "Двор", icon: "./images/category/yard.svg"},
-  {name: "Дом", icon: "./images/category/home.svg"},
-  {name: "Дорога", icon: "./images/category/road.svg"},
-  {name: "Инфраструктура", icon: "./images/category/infrastructure.svg"},
-  {name: "Транспорт", icon: "./images/category/transport.svg"},
-  {name: "Строительство", icon: "./images/category/bulding.svg"},
-  {name: "Торговля и реклама", icon: "./images/category/marketing.svg"},
-  {name: "Госучереждения и общественные организации", icon: "./images/category/institution.svg"},
-  {name: "Поликлиники", icon: "./images/category/hospital.svg"},
-  {name: "Эко", icon: "./images/category/eco.svg"}
-];
-
 const templeteCategoryCard = page.querySelector('.templeteCategoryCard').content;
 const sections = [...page.querySelectorAll('.section')];
 const sectionHiddenClass = 'section_hidden';
@@ -45,6 +31,7 @@ const chooseCategory = (category) => {
   openForm(formContainer);
   formElementCategory.value = category.name;
   navLinkInitiativeContainer.classList.remove('nav__item_disable');
+  commentContainer.classList.remove('form__previewButton_open');
   changeSection(inputDataSection);
 };
 
@@ -76,21 +63,34 @@ const togglePreview = () => {
   previewContainer.classList.toggle('form__preview_hidden');
 }
 
-//TO DO: использовать одну цитату, несколько раз, а не каждого символа - своя цитата
+//TO DO: получение цитаты с сервера
 const transformTextToQuote = (text) =>{
-  const qoute = 'Cъешь ещё этих мягких французских булок, да выпей чаю';
+  const initialQoute = 'съешь ещё этих мягких французских булок, да выпей чаю' + '\n';
+  let qoute = initialQoute;
   const resalt = document.createElement('div');
   const templateQuteContainer = document.createElement('p');
   templateQuteContainer.classList.add('quote');
   const simvolContainer = document.createElement('span');
   simvolContainer.classList.add('quote__bold');
-  text.toLowerCase().split('').forEach((simvol) =>{
-    const qouteContainer = templateQuteContainer.cloneNode(true);
+  let qouteContainer = templateQuteContainer.cloneNode(true);
+  text.toLowerCase().split('').forEach((simvol) => {
     simvol === ' ' ? simvolContainer.textContent = '_' : simvolContainer.textContent = simvol;
-    const index = qoute.indexOf(simvol);
-    qouteContainer.append(qoute.slice(0, index), simvolContainer.cloneNode(true), qoute.slice(index + 1, qoute.length), '\n');
-    resalt.append(qouteContainer);
+    let index = qoute.indexOf(simvol);
+    if (index >= 0) {
+      qouteContainer.append(qoute.slice(0, index), simvolContainer.cloneNode(true));
+      qoute = qoute.slice(index + 1, qoute.length);
+    }else{
+      qoute = initialQoute;
+      index = qoute.indexOf(simvol);
+      qouteContainer.append(qoute);
+      resalt.append(qouteContainer);
+      qouteContainer = templateQuteContainer.cloneNode(true);
+      qouteContainer.append(qoute.slice(0, index), simvolContainer.cloneNode(true));
+      qoute = qoute.slice(index + 1, qoute.length);
+    }
   })
+  qouteContainer.append(qoute);
+  resalt.append(qouteContainer);
   return resalt;
 };
 
@@ -105,9 +105,10 @@ buttonPreview.addEventListener('click', () =>{
   togglePreview();
 });
 
-// formContainer.addEventListener('submit', (evt) => {
-//   evt.preventDefault();
-//   submitFormAddInitiative();
-// });
+//TO DO: submit from to server
+formContainer.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  // submitFormAddInitiative();
+});
 
 addCategoryCards(categories, categoriesContainer);

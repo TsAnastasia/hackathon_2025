@@ -25,16 +25,6 @@ const createInitiativeCard = (initiative) => {
   imageContainer.src = initiative.linkImage;
   titleContainer.textContent = initiative.title;
   descriptionContainer.textContent = initiative.description;
-  /*buttonLike.addEventListener('click', (evt) => {
-    evt.target.classList.toggle('button-like_active');
-  });
-  buttonDelete.addEventListener('click', (evt) => {
-    evt.target.closest('.card').parentElement.remove();
-    renderAdded();
-  });
-  imageDarkening.addEventListener('click', (evt) => {
-    openPopupViewCard(evt.target.closest('.card'));
-  });*/
   return newCard;
 };
 
