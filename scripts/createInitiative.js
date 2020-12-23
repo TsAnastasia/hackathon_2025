@@ -31,7 +31,8 @@ const chooseCategory = (category) => {
   openForm(formContainer);
   formElementCategory.value = category.name;
   navLinkInitiativeContainer.classList.remove('nav__item_disable');
-  commentContainer.classList.remove('form__previewButton_open');
+  buttonPreview.classList.remove('form__previewButton_open');
+  previewContainer.classList.add('form__preview_hidden');
   changeSection(inputDataSection);
 };
 
