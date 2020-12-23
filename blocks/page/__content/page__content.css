@@ -1,3 +1,6 @@
 .page__content{
-  padding: 120px 0 70px;
+  padding: 140px 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
 }

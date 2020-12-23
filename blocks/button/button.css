@@ -1,16 +1,32 @@
 .button{
-  border-radius: 16px;
-  font-style: normal;
-  font-weight: 500;
+  padding: 14px;
+  min-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  background-color: #004b76;
-  border: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
   outline: 0;
+  border-radius: 8px;
+  border: 1px solid #19488e;
+  color: #19488e;
+  background-color: #fff;
+}
+
+.button:hover{
+  box-shadow: 0px 3px 15px rgba(0, 75, 118, 0.15);
+}
+
+.button:active{
+  border-color: #97b2dF;
+  color: #fff;
+  background-color: #97b2dF;
 }
 
 .button:disabled{
-  background-color: #acc4d3;
+  border-color: #e2e4eb;
+  color: #1d1d1f;
+  box-shadow: none;
 }

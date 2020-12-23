@@ -1,0 +1,7 @@
+.form__previewButton{
+  background-image: url("../../../images/icons/eye-closed.svg");
+}
+
+.form__previewButton:disabled{
+  opacity: 0.4;
+}
