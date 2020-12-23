@@ -86,17 +86,9 @@ const transformTextToQuote = (text) =>{
   simvolContainer.classList.add('quote__bold');
   text.toLowerCase().split('').forEach((simvol) =>{
     const qouteContainer = templateQuteContainer.cloneNode(true);
-    if (simvol === ' '){
-      simvolContainer.textContent = '_';
-      qouteContainer.append(simvolContainer.cloneNode(true));
-    }else{
-      simvolContainer.textContent = simvol;
-      const index = qoute.indexOf(simvol);
-      qouteContainer.append(qoute.slice(0, index));
-      qouteContainer.append(simvolContainer.cloneNode(true));
-      qouteContainer.append(qoute.slice(index + 1, qoute.length));
-      qouteContainer.append('\n');
-    };
+    simvol === ' ' ? simvolContainer.textContent = '_' : simvolContainer.textContent = simvol;
+    const index = qoute.indexOf(simvol);
+    qouteContainer.append(qoute.slice(0, index), simvolContainer.cloneNode(true), qoute.slice(index + 1, qoute.length), '\n');
     resalt.append(qouteContainer);
   })
   return resalt;
