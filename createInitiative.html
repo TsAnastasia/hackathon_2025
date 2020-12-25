@@ -64,28 +64,37 @@
           </div>
           <fieldset class="form__fieldset">
             <div class="form__rowButtons">
-              <!--TO DO: add files -->
-              <button class="form__button form__button_type_image" type="button"></button>
+              <label>
+                <div class="form__button form__button_type_image"></div>
+                <input class="form__item form__item_type_file" id="addImage" name="addImage" type="file" accept="image/*" multiple>
+              </label>
+              <!--TO DO: add photo -->
               <button class="form__button form__button_type_foto" type="button"></button>
-              <button class="form__button form__button_type_file" type="button"></button>
+              <label>
+                <div class="form__button form__button_type_file"></div>
+                <input class="form__item form__item_type_file" id="addFile" name="addFile" type="file" multiple>
+              </label>
+              <!--TO DO: add pin -->
               <button class="form__button form__button_type_pin" type="button"></button>
             </div>
             <button class="form__button form__previewButton" type="button"></button>
           </fieldset>
+          <ul class="form__listImages"></ul>
+          <ul class="form__listFiles"></ul>
           <div class="form__down">  
             <p class="form__infoRequired">Для продолжения заполните все поля и добавьте фото</p>
-            <button class="button button_blue form__submit" type="submit">Продолжить</button>
+            <button class="button button_blue form__submit" type="submit">Опубликовать</button>
           </div>
         </form>
       </section>
 
-      <!--<section class="section page__section success section_hidden">
+      <section class="section page__section success section_hidden">
         <div class="success__resalt">
           <h2 class="section__title section__title_center">Инициатива успешно создана</h2>
           <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
         </div>
         <a class="button button_big link success__button" href="./index.html">Перейти на главную</a>
-      </section> -->
+      </section>
     </main>
 
     <template class="templeteCategoryCard">
@@ -97,10 +106,18 @@
       </li>
     </template>
 
-    <template class="templateFileIcon">
-      <li>
-        <img class="form__fileIcon">
+    <template class="templateAddImageContainer">
+      <li class="form__itemImage">
+        <img class="form__image" src="./images/image.png" alt="image">
+        <button class="form__deleteImage" type="button">Удалить</button>
       </li>
+    </template>
+
+    <template class="templateAddFileContainer">
+      <li class="form__itemFile">
+        <p class="form__fileName"></p>
+        <button class="form__deleteFile" type="button"></button>
+      </li>  
     </template>
     
     <footer class="footer page__footer">
@@ -108,8 +125,9 @@
   </div>
  
   <script src="./scripts/header.js"></script>
-  <script src="./scripts/validate.js"></script>
   <script src="./scripts/dataCategory.js"></script>
+  <script src="./scripts/addRemoveFiles.js"></script>
+  <script src="./scripts/validate.js"></script>
   <script src="./scripts/createInitiative.js"></script>
 </body>
 </html>

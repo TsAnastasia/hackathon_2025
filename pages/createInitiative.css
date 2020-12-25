@@ -52,6 +52,7 @@
 @import url("../blocks/form/__item/_type/form__item_type_category.css");
 @import url("../blocks/form/__item/_type/form__item_type_select.css");
 @import url("../blocks/form/__item/_type/form__item_type_textarea.css");
+@import url("../blocks/form/__item/_type/form__item_type_file.css");
 @import url("../blocks/form/__textarea/form__textarea.css");
 @import url("../blocks/form/__error/form__error.css");
 @import url("../blocks/form/__error/_inside/form__error_inside.css");
@@ -68,6 +69,16 @@
 @import url("../blocks/form/__previewButton/form__previewButton.css");
 @import url("../blocks/form/__previewButton/_open/form__previewButton_open.css");
 @import url("../blocks/form/__preview/form__preview.css");
+@import url("../blocks/form/__listImages/form__listImages.css");
+@import url("../blocks/form/__itemImage/form__itemImage.css");
+@import url("../blocks/form/__image/form__image.css");
+@import url("../blocks/form/__deleteImage/form__deleteImage.css");
+@import url("../blocks/form/__listFiles/form__listFiles.css");
+@import url("../blocks/form/__itemFile/form__itemFile.css");
+@import url("../blocks/form/__fileName/__fileName.css");
+@import url("../blocks/form/__deleteFile/form__deleteFile.css");
+/* @import url("../blocks/form/__itemFile/") */
+
 
 
 @import url("../blocks/quote/quote.css");

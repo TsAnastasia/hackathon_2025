@@ -17,6 +17,10 @@ const openForm = (formElement) => {
   inputList.forEach( (inputElement) => {
     hideInputError(formElement, inputElement);
   });
+  imagesList.splice(0, imagesList.length);
+  filesList.splice(0, filesList.length);
+  imagesAddContainer.textContent = '';
+  filesAddContainer.textContent = '';
 };
 
 const showInputError = (formElement, inputElement, errorMessage) => {
@@ -46,7 +50,7 @@ const hasInvalidInput = (inputList) => {
 const toggleButtonState = (formElement, inputList) => {
   const buttonElement = formElement.querySelector(settingValidate.submitButtonSelector);
   const infoElement = formElement.querySelector(settingValidate.infoSelector);
-  if (hasInvalidInput(inputList)) {
+  if (hasInvalidInput(inputList) || (imagesList.length === 0)) {
     buttonElement.setAttribute('disabled', true);
     infoElement.classList.remove(settingValidate.infoClass);
   }else{

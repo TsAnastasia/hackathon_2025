@@ -64,9 +64,9 @@ const togglePreview = () => {
   previewContainer.classList.toggle('form__preview_hidden');
 }
 
-//TO DO: получение цитаты с сервера
+//TO DO: получение цитаты с сервера, передавать цитату в функцию
 const transformTextToQuote = (text) =>{
-  const initialQoute = 'съешь ещё этих мягких французских булок, да выпей чаю' + '\n';
+  const initialQoute = 'съешь ещё этих мягких французских булок, да выпей чаю';
   let qoute = initialQoute;
   const resalt = document.createElement('div');
   const templateQuteContainer = document.createElement('p');
@@ -81,22 +81,21 @@ const transformTextToQuote = (text) =>{
       qouteContainer.append(qoute.slice(0, index), simvolContainer.cloneNode(true));
       qoute = qoute.slice(index + 1, qoute.length);
     }else{
+      qouteContainer.append(qoute, '\n');
+      resalt.append(qouteContainer);
       qoute = initialQoute;
       index = qoute.indexOf(simvol);
-      qouteContainer.append(qoute);
-      resalt.append(qouteContainer);
       qouteContainer = templateQuteContainer.cloneNode(true);
       qouteContainer.append(qoute.slice(0, index), simvolContainer.cloneNode(true));
       qoute = qoute.slice(index + 1, qoute.length);
     }
   })
-  qouteContainer.append(qoute);
+  qouteContainer.append(qoute, '\n');
   resalt.append(qouteContainer);
   return resalt;
 };
 
 const submitFormAddInitiative = () => {
-
   changeSection(successSection);
 };
 
@@ -106,10 +105,10 @@ buttonPreview.addEventListener('click', () =>{
   togglePreview();
 });
 
-//TO DO: submit from to server
+//TO DO: submit to server
 formContainer.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  // submitFormAddInitiative();
+  submitFormAddInitiative();
 });
 
 addCategoryCards(categories, categoriesContainer);
