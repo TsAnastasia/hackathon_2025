@@ -38,40 +38,42 @@
     </header>
 
     <main class="main">
-      <section class="section page__section account">
-        <div class="account__header">
-          <h1 class="section__title acount__title">Личный кабинет</h1>
-          <a class="link account__info" href="./info.html">инфро</a>
+      <section class="section page__section profile">
+        <h1 class="section__title">Личный кабинет</h1>
+        <div class="profile__intro">
+          <div class="profile__avatar"></div>
+          <p class="profile__welcome">Здравствуйте, <span class="profile__name"></span>!</p>
+          <p class="profile__person"></p>
         </div>
-        <div class="account__row">
-          <a class="account__button account__button_type_setting" href="./setting.html"></a>
-          <a class="account__button account__button_type_alert" href="./alert.html"></a>
-        </div>
-        <div class="account__label">  
-          <p class="account__welcome">Здравствуйте, <span class="acount__neme">Василий</span></p>
-          <p class="account__person">гражданин</p>
-        </div>
-        <nav class="account__menu">
-          <ul class="account__menuList">
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="./personData.html">Мои данные</a>
+        <nav>
+          <ul class="profile__menu">
+            <li>
+              <a class="profile__menuLink" href="./personInitiative.html">
+                <p class="profile__menuItem">Мои инициативы</p>
+                <span class="profile__menuCount profile__menuCount_type_initiative"></span>
+              </a>
             </li>
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="./personInitiative.html">Мои инициативы</a>
+            <li>
+              <a class="profile__menuLink" href="./areaInitiative.html">
+                <p class="profile__menuItem">Мой район</p>
+              </a>
             </li>
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="./areaInitiative.html">Мой район</a>
+            <li>
+              <a class="profile__menuLink" href="./info.html">
+                <p class="profile__menuItem">Информация</p>
+              </a>
             </li>
-            <li class="account__menuItem">
-              <a class="account__menuLink" href="#"></a>
+            <li>
+              <a class="profile__menuLink" href="./setting.html">
+                <p class="profile__menuItem">Настройки</p>
+              </a>
             </li>
           </ul>
         </nav>
+        <div class="page__downButton">
+          <a class="button button_blue" href="./createInitiative.html">Создать инициативу</a>
+        </div>
       </section>
-      
-      <div class="addInitiative page__downButton">
-        <a class="link button button_big button_type_addInitiative" href="./addInitiative.html">Создать инициативу</a>
-      </div>
     </main>
     
     <footer class="footer page__footer">
@@ -79,5 +81,6 @@
   </div>
  
   <script src="./scripts/header.js"></script>
+  <script src="./scripts/profile.js"></script>
 </body>
 </html>

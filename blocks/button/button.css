@@ -1,6 +1,5 @@
 .button{
-  padding: 14px;
-  min-width: 150px;
+  padding: 14px 40px;
   display: flex;
   justify-content: center;
   align-items: center;

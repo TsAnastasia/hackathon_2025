@@ -1,6 +1,8 @@
 //TO DO: data from server
 const person = {
-  name: "Валисий",
+  name: 'Валисий',
+  type: "гражданин",
+  avatarLink: './images/avatars/avatars-000002.jpg',
   countAlert: 1,
   countInitiative: 245,
 }

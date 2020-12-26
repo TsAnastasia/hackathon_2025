@@ -1,0 +1,9 @@
+.profile__menu{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: row;
+  gap: 20px;
+  list-style: none;
+}

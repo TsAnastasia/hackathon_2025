@@ -1,0 +1,17 @@
+.profile__menuCount{
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  font-size: 8px;
+  line-height: 10px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  background: #b6bbcc;
+  border-radius: 50%;
+}
