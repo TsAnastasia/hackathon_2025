@@ -11,18 +11,15 @@
 @import url("../blocks/header/__buttonsLine/header__buttonsLine.css");
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__button/header__button.css");
-@import url("../blocks/header/__button/_visible/header__button_visible.css");
-@import url("../blocks/header/__buttonIcon/header__buttonIcon.css");
-@import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_menu.css");
-@import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_search.css");
-@import url("../blocks/header/__buttonText/header__buttonText.css");
+@import url("../blocks/header/__button/_type/header__button_type_menu.css");
+@import url("../blocks/header/__button/_type/header__button_type_search.css");
 @import url("../blocks/header/__menu/header__menu.css");
-/*
-@import url("../blocks/header/__nav/header__nav.css");
-@import url("../blocks/header/__nav/_hidden/header__nav_hidden.css");
+@import url("../blocks/header/__menu/_visible/header__menu_visible.css");
 
 @import url("../blocks/menu/__list/menu__list.css");
-@import url("../blocks/menu/__link/menu__link.css");*/
+@import url("../blocks/menu/__item/menu__item.css");
+@import url("../blocks/menu/__link/menu__link.css");
+@import url("../blocks/menu/__count/menu__count.css");
 
 @import url("../blocks/nav/nav.css");
 @import url("../blocks/nav/__list/nav__list.css");

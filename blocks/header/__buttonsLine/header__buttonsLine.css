@@ -1,6 +1,6 @@
 .header__buttonsLine{
   margin: 0;
-  padding: 24px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;

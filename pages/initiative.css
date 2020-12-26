@@ -7,31 +7,23 @@
 @import url("../blocks/page/__section/page__section.css");
 
 @import url("../blocks/header/header.css");
+@import url("../blocks/header/__buttonsLine/header__buttonsLine.css");
+@import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/__button/header__button.css");
-@import url("../blocks/header/__button/_visible/header__button_visible.css");
-@import url("../blocks/header/__rowButtons/header__rowButtons.css");
-@import url("../blocks/header/__buttonIcon/header__buttonIcon.css");
-@import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_back.css");
-@import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_profile.css");
-@import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_alert.css");
-@import url("../blocks/header/__buttonIcon/_type/header__buttonIcon_type_menu.css");
-@import url("../blocks/header/__buttonText/header__buttonText.css");
-@import url("../blocks/header/__nav/header__nav.css");
-@import url("../blocks/header/__nav/_hidden/header__nav_hidden.css");
+@import url("../blocks/header/__button/_type/header__button_type_menu.css");
+@import url("../blocks/header/__button/_type/header__button_type_search.css");
+@import url("../blocks/header/__menu/header__menu.css");
+@import url("../blocks/header/__menu/_visible/header__menu_visible.css");
 
 @import url("../blocks/menu/__list/menu__list.css");
+@import url("../blocks/menu/__item/menu__item.css");
 @import url("../blocks/menu/__link/menu__link.css");
+@import url("../blocks/menu/__count/menu__count.css");
 
-@import url("../blocks/link/link.css");
 @import url("../blocks/button/button.css");
 @import url("../blocks/button/_big/button_big.css");
 
-@import url("../blocks/nav/nav.css");
-@import url("../blocks/nav/__list/nav__list.css");
-@import url("../blocks/nav/__item/nav__item.css");
-@import url("../blocks/nav/__separator/nav__separator.css");
-
-@import url("../blocks/initiative/__row/initiative__row.css");
+/* @import url("../blocks/initiative/__row/initiative__row.css");
 @import url("../blocks/initiative/__row/_buttons/initiative__row_buttons.css");
 @import url("../blocks/initiative/__type/initiative__type.css");
 @import url("../blocks/initiative/__property/initiative__property.css");
@@ -45,7 +37,7 @@
 @import url("../blocks/initiative/__button/_type/initiative__button_type_pin.css");
 @import url("../blocks/initiative/__button/_type/initiative__button_type_share.css");
 @import url("../blocks/initiative/__button/_type/initiative__button_type_like.css");
-@import url("../blocks/initiative/__button/_grey/initiative__button_grey.css");
+@import url("../blocks/initiative/__button/_grey/initiative__button_grey.css"); */
 
-@import url("../blocks/quote/quote.css");
-@import url("../blocks/quote/__bold/quote__bold.css");
+/* @import url("../blocks/quote/quote.css");
+@import url("../blocks/quote/__bold/quote__bold.css"); */
