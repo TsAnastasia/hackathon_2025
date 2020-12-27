@@ -10,31 +10,29 @@ const person = {
 const page = document.querySelector('.page');
 const header = document.querySelector('.header');
 const buttonMenu = header.querySelector('.header__button_type_menu');
-const menuContainer = header.querySelector('.header__menu');
-const countAlert = header.querySelector('.menu__count_type_alert');
-const countInitiatives = header.querySelector('.menu__count_type_initiatives')
-const menuVisibleClass = 'header__menu_visible';
+const menu = page.querySelector('.page__menu');
+const countAlert = menu.querySelector('.menu__count_type_alert');
+const countInitiatives = menu.querySelector('.menu__count_type_initiatives')
+const menuVisibleClass = 'page__menu_visible';
 
 const openMenu = () => {
   countAlert.textContent = person.countAlert;
   countInitiatives.textContent = person.countInitiative;
-  menuContainer.classList.add(menuVisibleClass);
-  page.addEventListener('click', (evt) => {
-    if (!evt.target.closest('.header__menu')) {
-      closeMenu();
-    };
-  });
+  pageContent.classList.add('page__content_darking');
+  menu.classList.add(menuVisibleClass);
+  page.addEventListener('click', closeMenu);
 };
 
-const closeMenu = () => {
-  menuContainer.classList.remove(menuVisibleClass);
+const closeMenu = (evt) => {
+  console.log('hi');
+  if (!evt.target.closest('.menu')){
+    pageContent.classList.remove('page__content_darking');
+    menu.classList.remove(menuVisibleClass);
+    page.removeEventListener('click', closeMenu);
+  };
 };
 
 buttonMenu.addEventListener('click', (evt) => {
   evt.stopPropagation();
-  if (menuContainer.classList.contains(menuVisibleClass)) {
-    closeMenu();
-  }else{
-    openMenu();
-  };
+  openMenu();
 });

@@ -43,7 +43,7 @@ const hideFiles = (evt) => {
     filesContainer.textContent = '';
     pageContent.classList.remove('page__content_darking');
     filesContainer.classList.remove('initiative__files_visible');
-    page.addEventListener('click', hideFiles);
+    page.removeEventListener('click', hideFiles);
   }
 };
 
