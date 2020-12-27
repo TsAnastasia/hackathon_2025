@@ -1,0 +1,17 @@
+.initiative__like{
+  margin: 0;
+  padding: 0 0 0 30px;
+  height: 24px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #737a92;
+  background-color: transparent;
+  background-position: center left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../../../images/icons/like.svg");
+}

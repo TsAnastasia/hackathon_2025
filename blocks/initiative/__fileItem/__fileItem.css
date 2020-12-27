@@ -1,0 +1,10 @@
+.initiative__fileItem{
+  border-bottom: 1px solid #e2e4eb;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.initiative__fileItem:last-child{
+  border-bottom: 0;
+}

@@ -1,0 +1,7 @@
+.initiative__status_value_working{
+  background-color: #97b2df;
+}
+
+.initiative__status_value_working::after{
+  content: "В работе";
+}

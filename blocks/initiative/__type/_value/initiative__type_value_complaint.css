@@ -1,0 +1,7 @@
+.initiative__type_value_complaint{
+  background-color: red;
+}
+
+.initiative__type_value_complaint::after{
+  content: "Жалоба";
+}

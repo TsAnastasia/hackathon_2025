@@ -1,0 +1,17 @@
+.addComment__button{
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../../../images/icons/send.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addComment__button:disabled{
+  opacity: 0.5;
+}

@@ -1,0 +1,10 @@
+.initiative__images{
+  margin: 16px 0 24px;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 16px;
+  list-style: none;
+  overflow-x: scroll;
+}

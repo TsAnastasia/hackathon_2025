@@ -3,6 +3,7 @@
 
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/__content/page__content.css");
+@import url("../blocks/page/__content/_darking/page__content_darking.css");
 @import url("../blocks/page/__header/page__header.css");
 @import url("../blocks/page/__section/page__section.css");
 
@@ -20,24 +21,50 @@
 @import url("../blocks/menu/__link/menu__link.css");
 @import url("../blocks/menu/__count/menu__count.css");
 
-@import url("../blocks/button/button.css");
-@import url("../blocks/button/_big/button_big.css");
+@import url("../blocks/nav/nav.css");
+@import url("../blocks/nav/__list/nav__list.css");
+@import url("../blocks/nav/__element/nav__element.css");
+@import url("../blocks/nav/__item/nav__item.css");
+@import url("../blocks/nav/__item/_disable/nav__item_disable.css");
 
-/* @import url("../blocks/initiative/__row/initiative__row.css");
-@import url("../blocks/initiative/__row/_buttons/initiative__row_buttons.css");
+@import url("../blocks/initiative/initiative.css");
+@import url("../blocks/initiative/__title/initiative__title.css");
+@import url("../blocks/initiative/__date/initiative__date.css");
 @import url("../blocks/initiative/__type/initiative__type.css");
-@import url("../blocks/initiative/__property/initiative__property.css");
-@import url("../blocks/initiative/__property/_grey/initiative__property_grey.css");
-@import url("../blocks/initiative/__property/_type/initiative__property_type_quote.css");
-@import url("../blocks/initiative/__property/_type/initiative__property_type_oficialComment.css");
-@import url("../blocks/initiative/__rowButtons/initiative__rowButtons.css");
+@import url("../blocks/initiative/__type/_value/initiative__type_value_complaint.css");
+@import url("../blocks/initiative/__type/_value/initiative__type_value_offer.css");
+@import url("../blocks/initiative/__type/_value/initiative__type_value_gratitude.css");
+@import url("../blocks/initiative/__status/initiative__status.css");
+@import url("../blocks/initiative/__status/_value/initiative__status_value_moderation.css");
+@import url("../blocks/initiative/__status/_value/initiative__status_value_working.css");
+@import url("../blocks/initiative/__status/_value/initiative__status_value_done.css");
+@import url("../blocks/initiative/__adress/initiative__adress.css");
+@import url("../blocks/initiative/__images/initiative__images.css");
+@import url("../blocks/initiative/__image/initiative__image.css");
+@import url("../blocks/initiative/__text/initiative__text.css");
+@import url("../blocks/initiative/__buttons/initiative__buttons.css");
+@import url("../blocks/initiative/__buttonsGroup/initiative__buttonsGroup.css");
 @import url("../blocks/initiative/__button/initiative__button.css");
-@import url("../blocks/initiative/__button/_type/initiative__button_type_image.css");
-@import url("../blocks/initiative/__button/_type/initiative__button_type_file.css");
-@import url("../blocks/initiative/__button/_type/initiative__button_type_pin.css");
 @import url("../blocks/initiative/__button/_type/initiative__button_type_share.css");
-@import url("../blocks/initiative/__button/_type/initiative__button_type_like.css");
-@import url("../blocks/initiative/__button/_grey/initiative__button_grey.css"); */
+@import url("../blocks/initiative/__button/_type/initiative__button_type_file.css");
+@import url("../blocks/initiative/__like/initiative__like.css");
+@import url("../blocks/initiative/__like/_active/initiative__like_active.css");
+@import url("../blocks/initiative/__files/initiative__files.css");
+@import url("../blocks/initiative/__files/_visible/initiative__files_visible.css");
+@import url("../blocks/initiative/__fileItem/__fileItem.css");
+@import url("../blocks/initiative/__fileType/initiative__fileType.css");
+@import url("../blocks/initiative/__fileName/initiative__fileName.css");
+@import url("../blocks/initiative/__fileSize/initiative__fileSize.css");
 
-/* @import url("../blocks/quote/quote.css");
-@import url("../blocks/quote/__bold/quote__bold.css"); */
+@import url("../blocks/comments/__title/comments__title.css");
+@import url("../blocks/comments/__list/comments__list.css");
+
+@import url("../blocks/comment/comment.css");
+@import url("../blocks/comment/__avatar/comment__avatar.css");
+@import url("../blocks/comment/__author/comment__author.css");
+@import url("../blocks/comment/__qoute/comment__qoute.css");
+@import url("../blocks/comment/__date/comment__date.css");
+
+@import url("../blocks/addComment/addComment.css");
+@import url("../blocks/addComment/__text/addComment__text.css");
+@import url("../blocks/addComment/__button/addComment__button.css");

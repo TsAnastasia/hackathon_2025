@@ -1,0 +1,22 @@
+.initiative__status{
+  margin: 0;
+  padding: 0;;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 84px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.initiative__status::after{
+  font-size: 8px;
+  line-height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}

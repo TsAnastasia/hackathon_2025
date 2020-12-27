@@ -1,0 +1,20 @@
+.initiative__fileType{
+  margin: 8px 8px 12px 0;
+  padding: 5px 0 0;
+  width: 34px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  line-height: 12px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #737a92;
+  background-image: url("../../images/icons/box-file.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
