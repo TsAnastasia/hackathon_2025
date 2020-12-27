@@ -8,6 +8,7 @@ const person = {
 }
 
 const page = document.querySelector('.page');
+const pageContent = page.querySelector('.page__content');
 const header = document.querySelector('.header');
 const buttonMenu = header.querySelector('.header__button_type_menu');
 const menu = page.querySelector('.page__menu');
@@ -24,7 +25,6 @@ const openMenu = () => {
 };
 
 const closeMenu = (evt) => {
-  console.log('hi');
   if (!evt.target.closest('.menu')){
     pageContent.classList.remove('page__content_darking');
     menu.classList.remove(menuVisibleClass);

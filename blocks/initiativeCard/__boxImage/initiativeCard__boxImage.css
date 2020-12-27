@@ -1,9 +1,0 @@
-.initiativeCard__boxImage{
-  position: relative;
-}
-
-.initiativeCard__boxImage::after{
-  content: "";
-  padding-bottom: 60%;
-  display: block;
-}

@@ -1,7 +1,6 @@
 
 const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 
-const pageContent = page.querySelector('.page__content');
 const templatePhotoContainer = page.querySelector('.templateInitiativeImage').content;
 const imagesContainer = page.querySelector('.initiative__images');
 const templateFileContainer = page.querySelector('.templateInitiativeFile').content;

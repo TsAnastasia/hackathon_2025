@@ -1,0 +1,17 @@
+.categoryList__name{
+  margin: 0;
+  padding: 7px 16px;
+  max-width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  background: #b6bbcc;
+}
