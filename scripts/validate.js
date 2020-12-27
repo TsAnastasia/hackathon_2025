@@ -32,9 +32,9 @@ const showInputError = (formElement, inputElement, errorMessage) => {
 const hideInputError = (formElement, inputElement) => {
   const errorElement = formElement.querySelector(`${settingValidate.errorClass}${inputElement.name}`);
   inputElement.classList.remove(settingValidate.inputErrorClass);
-  // if (errorElement) { 
-  //   errorElement.textContent = '';
-  // };
+  if (errorElement) { 
+    errorElement.textContent = '';
+  };
 };
 
 const checkInputValidity = (formElement, inputElement) => {

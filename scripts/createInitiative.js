@@ -66,7 +66,7 @@ const togglePreview = () => {
 
 //TO DO: получение цитаты с сервера, передавать цитату в функцию
 const transformTextToQuote = (text) =>{
-  const initialQoute = 'съешь ещё этих мягких французских булок, да выпей чаю';
+  const initialQoute = 'щипцами брюки разлохмачу,\n гребёнкой волосы взъерошу.\nэффектно ожидать удачу\n до самой смерти я не брошу!';
   let qoute = initialQoute;
   const resalt = document.createElement('div');
   const templateQuteContainer = document.createElement('p');

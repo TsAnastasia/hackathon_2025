@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Добавление инициативы</title>
+  <link rel="icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./pages/createInitiative.css">
 </head>
 <body class="page">
@@ -14,27 +15,6 @@
         <a class="header__logo" href="./index.html"></a>
         <button class="header__button header__button_visible header__button_type_search" type="button"></button>
       </div>
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="./profile.html">Профиль</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./alert.html">Оповещения</a>
-            <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
-            <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./info.html">Информация</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./setting.html">Настройки</a>
-          </li>
-        </ul>
-      </nav>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__element">
@@ -46,6 +26,31 @@
         </ul>
       </nav>
     </header>
+
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
 
     <main class="main" aria-label="Добавление инициативы">
             
@@ -96,12 +101,14 @@
         </form>
       </section>
 
-      <section class="section page__section success section_hidden">
-        <div class="success__resalt">
-          <h2 class="section__title section__title_center">Инициатива успешно создана</h2>
-          <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
+      <section class="section page__section section_hidden success">
+        <div class="success__content">
+          <div class="success__resalt">
+            <h2 class="section__title section__title_center">Инициатива успешно создана</h2>
+            <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
+          </div>
+          <a class="button button_blue" href="./index.html">Перейти на главную</a>
         </div>
-        <a class="button button_big link success__button" href="./index.html">Перейти на главную</a>
       </section>
     </main>
 
