@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Личный кабинет</title>
+  <title>Информация</title>
+  <link rel="icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./pages/info.css">
 </head>
 <body class="page">
@@ -14,42 +15,65 @@
         <a class="header__logo" href="./index.html"></a>
         <button class="header__button header__button_visible header__button_type_search" type="button"></button>
       </div>
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="./profile.html">Профиль</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./alert.html">Оповещения</a>
-            <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
-            <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./info.html">Информация</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./setting.html">Настройки</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
-    <main class="main" aria-label="Добавление инициативы">
-      <section class="page__section simpleSection">
-        <h1 class="simpleSection__header">Информация</h1>
-        <ul class="simpleSection__list">
-          <li class="simpleSection__item">
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
 
-          </li>
-        </ul>
+    <main class="main" aria-label="Добавление инициативы">
+      <section class="section page__section">
+        <h1 class="section__title">Информация</h1>
+        <article class="article">
+          <h2 class="article__title">Использование сервиса</h2>
+          <ul class="article__list">
+            <li>
+              <a class="article__item" href="#">Правила публикации инициатив</a>
+            </li>
+            <li>
+              <a class="article__item" href="#">Правила ЖКХ</a>
+            </li>
+            <li>
+              <a class="article__item" href="#">Правила публикации инициатив</a>
+            </li>
+          </ul>
+        </article>
+        <article class="article">
+          <h2 class="article__title">Правовая информация</h2>
+          <ul class="article__list">
+            <li>
+              <a class="article__item" href="#">Конституция Российской Федерации</a>
+            </li>
+            <li>
+              <a class="article__item" href="#">Правовые акты</a>
+            </li>
+            <li>
+              <a class="article__item" href="#">Законодательство России</a>
+            </li>
+          </ul>
+        </article>
       </section>
-      
-      <div class="addInitiative page__downButton">
-        <a class="link button button_big button_type_addInitiative" href="./account.html">Назад</a>
-      </div>
     </main>
     
     <footer class="footer page__footer">

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Личный кабинет</title>
+  <link rel="icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./pages/profile.css">
 </head>
 <body class="page">
@@ -14,28 +15,32 @@
         <a class="header__logo" href="./index.html"></a>
         <button class="header__button header__button_visible header__button_type_search" type="button"></button>
       </div>
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="./profile.html">Профиль</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./alert.html">Оповещения</a>
-            <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
-            <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./info.html">Информация</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./setting.html">Настройки</a>
-          </li>
-        </ul>
-      </nav>
     </header>
+
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
 
     <main class="main">
       <section class="section page__section profile">
@@ -56,6 +61,12 @@
             <li>
               <a class="profile__menuLink" href="./areaInitiative.html">
                 <p class="profile__menuItem">Мой район</p>
+              </a>
+            </li>
+            <li>
+              <a class="profile__menuLink" href="./alert.html">
+                <p class="profile__menuItem">Оповещения</p>
+                <span class="profile__menuCount profile__menuCount_type_alert"></span>
               </a>
             </li>
             <li>

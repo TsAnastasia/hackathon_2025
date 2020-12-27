@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Личный кабинет</title>
+  <title>Настройки</title>
+  <link rel="icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./pages/setting.css">
 </head>
 <body class="page">
@@ -14,42 +15,60 @@
         <a class="header__logo" href="./index.html"></a>
         <button class="header__button header__button_visible header__button_type_search" type="button"></button>
       </div>
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="./profile.html">Профиль</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./alert.html">Оповещения</a>
-            <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
-            <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./info.html">Информация</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="./setting.html">Настройки</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
-    <main class="main" aria-label="Добавление инициативы">
-      <section class="page__section simpleSection">
-        <h1 class="simpleSection__header">Настройки</h1>
-        <ul class="simpleSection__list">
-          <li class="simpleSection__item">
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
 
+    <main class="main">
+      <section class="page__section adresses">
+        <h1 class="section__title">Настройки</h1>
+        <p class="adresses__title">Сохраненные адреса</p>
+        <ul class="adresses__list">
+          <li>
+            <button class="adresses__item" type="button">Москва, ул. Большая Якиманка, д35 с4</button>
+          </li>
+          <li>
+            <button class="adresses__item" type="button">Тверь, ул. Темная, д.35, кв.24</button>
+          </li>
+          <li>
+            <button class="adresses__item" type="button">Тверь, ул. Яркая, д.35, кв.24</button>
+          </li>
+          <li>
+            <button class="adresses__item" type="button">Москва, ул. Тверская, д234 корп5 стр3</button>
           </li>
         </ul>
+        <button class="adresses__add"></button>
       </section>
-      
-      <div class="addInitiative page__downButton">
-        <a class="link button button_big button_type_addInitiative" href="./account.html">Назад</a>
-      </div>
+
+      <div class="popup addAdress">
+        <button class="addAdress__close"></button>
+        <h2 class="addAdress__title">Добавление адреса</h2>
+        <iframe></iframe>
+        <button class="addAdress__button">Добавить адрес</button>
+      </section>
     </main>
     
     <footer class="footer page__footer">
