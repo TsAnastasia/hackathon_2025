@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавление инициативы</title>
+  <link rel="icon" href="./images/logo.svg">
+  <link rel="stylesheet" href="./pages/createInitiative.css">
+</head>
+<body class="page">
+  <div class="page__content">
+    <header class="header page__header">
+      <div class="header__buttonsLine">
+        <button class="header__button header__button_visible header__button_type_menu" type="button"></button>
+        <a class="header__logo" href="./index.html"></a>
+        <button class="header__button header__button_visible header__button_type_search" type="button"></button>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__element">
+            <button class="nav__item nav__item_type_category" type="button">Категории</button>
+          </li>
+          <li class="nav__element">
+            <p class="nav__item nav__item_disable nav__item_type_initiative">Добавление инициативы</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main" aria-label="Добавление инициативы">
+            
+      <section class="section page__section categories">
+        <h2 class="section__title">Выберете категорию</h2>
+        <ul class="categories__list"></ul>
+      </section>
+
+      <section class="section page__section section_hidden inputData">
+        <form class="form" name="addInitiative" novalidate>
+          <h2 class="section__title">Добавление инициативы</h2>
+          <input class="form__item form__item_type_category" type="text" name="category" value="Госучереждения и общественные организации" readonly>
+          <input class="form__item form__item_required" type="text" name="title" placeholder="Название" autocomplete="off" maxlength="30" pattern="^[А-Яа-яЁё\s]+$" required>
+          <p class="form__error form__error_type_title"></p>
+          <select class="form__item form__item_type_select" name="type">
+            <option value="complaint">Жалоба</option>
+            <option value="offer">Предложение</option>
+            <option value="gratitude">Благодарность</option>
+          </select>
+          <div class="form__textarea">
+            <textarea class="form__item form__item_required form__item_type_textarea" name="comment" placeholder="Ваш комментарий" rows="6" maxlength="140" required></textarea>
+            <p class="form__error form__error_inside form__error_type_comment"></p>
+            <div class="form__preview form__preview_hidden"></div>
+          </div>
+          <fieldset class="form__fieldset">
+            <div class="form__rowButtons">
+              <label>
+                <div class="form__button form__button_type_image"></div>
+                <input class="form__item form__item_type_file" id="addImage" name="addImage" type="file" accept="image/*" multiple>
+              </label>
+              <!--TO DO: add photo -->
+              <button class="form__button form__button_type_foto" type="button"></button>
+              <label>
+                <div class="form__button form__button_type_file"></div>
+                <input class="form__item form__item_type_file" id="addFile" name="addFile" type="file" multiple>
+              </label>
+              <!--TO DO: add pin -->
+              <button class="form__button form__button_type_pin" type="button"></button>
+            </div>
+            <button class="form__button form__previewButton" type="button"></button>
+          </fieldset>
+          <ul class="form__listImages"></ul>
+          <ul class="form__listFiles"></ul>
+          <div class="form__down">  
+            <p class="form__infoRequired">Для продолжения заполните все поля и добавьте фото</p>
+            <button class="button button_blue form__submit" type="submit">Опубликовать</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section page__section section_hidden success">
+        <div class="success__content">
+          <div class="success__resalt">
+            <h2 class="section__title section__title_center">Инициатива успешно создана</h2>
+            <p class="success__text">скоро она пройдет модерацию и будет опубликована</p>
+          </div>
+          <a class="button button_blue" href="./index.html">Перейти на главную</a>
+        </div>
+      </section>
+    </main>
+
+    <template class="templeteCategoryCard">
+      <li class="categories__item">
+        <figure class="categories__figure categoryCard">
+          <img class="categoryCard__image" src="#" alt="category-icon">
+          <figcaption class="categoryCard__title"></figcaption>
+        </figure>
+      </li>
+    </template>
+
+    <template class="templateAddImageContainer">
+      <li class="form__itemImage">
+        <img class="form__image" src="./images/image.png" alt="image">
+        <button class="form__deleteImage" type="button">Удалить</button>
+      </li>
+    </template>
+
+    <template class="templateAddFileContainer">
+      <li class="form__itemFile">
+        <p class="form__fileName"></p>
+        <button class="form__deleteFile" type="button"></button>
+      </li>  
+    </template>
+    
+    <footer class="footer page__footer">
+    </footer>
+  </div>
+ 
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/dataCategory.js"></script>
+  <script src="./scripts/addRemoveFiles.js"></script>
+  <script src="./scripts/validate.js"></script>
+  <script src="./scripts/createInitiative.js"></script>
+</body>
+</html>

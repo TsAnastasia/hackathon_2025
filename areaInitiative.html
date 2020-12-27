@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой раон</title>
+  <link rel="icon" href="./images/logo.svg">
+  <link rel="stylesheet" href="./pages/areaInitiative.css">
+</head>
+<body class="page">
+  <div class="page__content">
+    <header class="header page__header">
+      <div class="header__buttonsLine">
+        <button class="header__button header__button_visible header__button_type_menu" type="button"></button>
+        <a class="header__logo" href="./index.html"></a>
+        <button class="header__button header__button_visible header__button_type_search" type="button"></button>
+      </div>
+    </header>
+
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <main class="main">
+      <section class="intro">
+        <h1 class="intro__item">Мой раон</h1>
+      </section>
+      <section class="section page__section initiatives initiatives_type_common">
+        <h2 class="section__title">Активные</h2>
+        <ul class="initiatives__list initiativesCommon__list"></ul>
+      </section>
+      
+      <section class="section page__section initiatives initiativesCustom">
+        <h2 class="section__title">Закрытые</h2>
+        <ul class="initiatives__list initiativesCustom__list"></ul>
+      </section>
+
+      <section class="page__downButton" aria-label="Создать инициативу">
+        <a class="button button_blue" href="./createInitiative.html">Создать инициативу</a>
+      </section>
+    </main>
+  
+    <template class="templeteInitiativeCard">
+      <li class="initiatives__item">
+        <article class="initiativeCard">
+          <img class="initiativeCard__image" src="#" alt="photo">
+          <div class="initiativeCard__info">
+            <h3 class="initiativeCard__title"></h3>
+            <p class="initiativeCard__qoute"></p>
+            <p class="initiativeCard__date"></p>
+            <div class="initiativeCard__type"></div>
+          </div>
+        </article>
+        <a class="initiatives__link" href="./initiative.html"></a>
+      </li>
+    </template>
+  
+    <footer class="footer page__footer">
+    </footer>
+  </div>
+
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/dataInitiatives.js"></script>
+  <script src="./scripts/addInitiativeCards.js"></script>
+  <script src="./scripts/areaInitiative.js"></script>
+</body>
+</body>
+</html>

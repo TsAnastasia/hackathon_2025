@@ -1,0 +1,11 @@
+.success__resalt{
+  margin: 0 auto 42px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../../images/icons/tick.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}

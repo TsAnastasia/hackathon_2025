@@ -1,0 +1,9 @@
+.form__listFiles{
+  margin: 8px 16px;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 4px;
+  justify-content: start;
+  list-style: none;
+}

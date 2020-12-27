@@ -1,0 +1,7 @@
+.initiative__type_value_offer{
+  background-color: #eeb868;
+}
+
+.initiative__type_value_offer::after{
+  content: "Предложение";
+}

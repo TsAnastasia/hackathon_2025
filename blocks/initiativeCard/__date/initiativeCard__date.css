@@ -1,0 +1,10 @@
+.initiativeCard__date{
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
+  line-height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #737a92;
+}

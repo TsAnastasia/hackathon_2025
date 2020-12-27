@@ -1,0 +1,7 @@
+.page__menu{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: none;
+  z-index: 500;
+}

@@ -1,0 +1,17 @@
+.initiative__type{
+  margin: 8px 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.initiative__type::after{
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;  
+  color: #737a92;
+}

@@ -3,54 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Гражданские инициативы</title>
+  <link rel="icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
+  <div class="page__content">
     <header class="header page__header">
-      <h1 class="header__title">Гражданские инициативы</h1>
+      <div class="header__buttonsLine">
+        <button class="header__button header__button_visible header__button_type_menu" type="button"></button>
+        <a class="header__logo" href="./index.html"></a>
+        <button class="header__button header__button_visible header__button_type_search" type="button"></button>
+      </div>
     </header>
 
-    <main class="main page__content">
-      <section class="section page__section initiatives initiativesCommon">
-        <a class="link" href="#">
-          <h2 class="section__title">Инициативы</h2>
-        </a>
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <main class="main" aria-label="Гражданские инициативы">
+      <section class="page__section">
+        <ul class="categoryList"></ul>
+      </section>
+    
+      <section class="section page__section initiatives initiatives_type_common">
+        <h2 class="section__title">Инициативы</h2>
         <ul class="initiatives__list initiativesCommon__list"></ul>
       </section>
       
       <section class="section page__section initiatives initiativesCustom">
-        <a class="link" href="#">
-          <h2 class="section__title">Мои инициативы</h2>
-        </a>
+        <h2 class="section__title">Мои инициативы</h2>
         <ul class="initiatives__list initiativesCustom__list"></ul>
+      </section>
+    
+      <section class="page__downButton" aria-label="Создать инициативу">
+        <a class="button button_blue" href="./createInitiative.html">Создать инициативу</a>
       </section>
     </main>
 
+    <template class="templateCategoryItem">
+      <li>
+        <button class="categoryList__name categoryList__name_active"></button>
+      </li>
+    </template>
+  
     <template class="templeteInitiativeCard">
       <li class="initiatives__item">
         <article class="initiativeCard">
-          <figure class="initiativeCard__figure">
-            <div class="initiativeCard__boxImage">
-              <img class="initiativeCard__image" src="#" alt="photo">
-            </div>
-            <figcaption class="initiativeCard__figcaption">
-              <h3 class="initiativeCard__title"></h3>
-              <p class="initiativeCard__text"></p>
-            </figcaption>
-          </figure>
+          <img class="initiativeCard__image" src="#" alt="photo">
+          <div class="initiativeCard__info">
+            <h3 class="initiativeCard__title"></h3>
+            <p class="initiativeCard__qoute"></p>
+            <p class="initiativeCard__date"></p>
+            <div class="initiativeCard__type"></div>
+          </div>
         </article>
+        <a class="initiatives__link" href="./initiative.html"></a>
       </li>
     </template>
-
+  
     <footer class="footer page__footer">
-      <a class="link" href="#">
-        <button class="button footer__button" type="button">Создать иниативу</button>
-      </a>
-      <div class="footer__line">
-      </div>
     </footer>
+  </div>
 
-    <script src="./scripts/index.js"></script>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/dataCategory.js"></script>
+  <script src="./scripts/dataInitiatives.js"></script>
+  <script src="./scripts/addInitiativeCards.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

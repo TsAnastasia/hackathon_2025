@@ -1,0 +1,12 @@
+.profile__menuLink{
+  margin: 0;
+  padding: 10px 8px;
+  min-height: 44px;
+  min-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background: #FFFFFF;
+  border-radius: 8px;
+}

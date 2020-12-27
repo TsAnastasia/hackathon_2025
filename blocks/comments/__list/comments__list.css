@@ -1,0 +1,8 @@
+.comments__list{
+  margin: 16px 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 8px;
+  list-style: none;
+}

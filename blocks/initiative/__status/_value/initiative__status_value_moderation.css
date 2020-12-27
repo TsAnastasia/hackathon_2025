@@ -1,0 +1,7 @@
+.initiative__status_value_moderation{
+  background-color: #b6bbcc;
+}
+
+.initiative__status_value_moderation::after{
+  content: "Модерация";
+}

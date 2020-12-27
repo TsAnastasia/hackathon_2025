@@ -1,0 +1,18 @@
+.form__deleteImage{
+  margin: 0;
+  padding: 0 14px 0 0;
+  font-size: 8px;
+  line-height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url("../../../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  color: #1c1c1d;
+}

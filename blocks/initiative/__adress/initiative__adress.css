@@ -1,0 +1,17 @@
+.initiative__adress{
+  margin: 8px 0 16px;
+  padding: 0 0 0 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #737a92;
+  background-image: url("../../../images/icons/pin.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 24px;
+}

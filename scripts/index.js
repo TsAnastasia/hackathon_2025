@@ -1,50 +1,24 @@
-const commonInitiatives = [
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега sdjkgacfjkdsbv bkjsahdvjked basfvjk;  haejscfwkd.as n.ck safhkwejfcasnfksdjf cdsa cfjksdcsn.fckdlsv  cdsfvkjwasdfc sdakbfvjkdaskjvc  уборка снега"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
-  {linkImage: "", title: "Уборка снега", description: "Уборка снега уборка снега"},
-];
+const templateCategoryItemContainer = page.querySelector('.templateCategoryItem').content;
+const categoryListContainer = page.querySelector('.categoryList');
 
-const customInitiatives = [
-  {linkImage: "", title: "Уборка", description: "Уборка снега уборка снега"},
-  {linkImage: "", title: "снега", description: "Уборка снега уборка снега"}
-];
-
-const page = document.querySelector('.page');
-const templaleInitiativeCard = page.querySelector('.templeteInitiativeCard').content;
-const commonCardsContainer = page.querySelector('.initiativesCommon__list');
-const customCardsContainer = page.querySelector('.initiativesCustom__list');
-
-//initiative: title, description, linkImage
-const createInitiativeCard = (initiative) => {
-  const newCard = templaleInitiativeCard.cloneNode(true);
-  const imageContainer = newCard.querySelector('.initiativeCard__image');
-  const titleContainer = newCard.querySelector('.initiativeCard__title');
-  const descriptionContainer = newCard.querySelector('.initiativeCard__text');
-  imageContainer.src = initiative.linkImage;
-  titleContainer.textContent = initiative.title;
-  descriptionContainer.textContent = initiative.description;
-  /*buttonLike.addEventListener('click', (evt) => {
-    evt.target.classList.toggle('button-like_active');
+const createCategoryItem = (category) => {
+  const categoryItemContainer = templateCategoryItemContainer.cloneNode(true);
+  const categoryButton = categoryItemContainer.querySelector('.categoryList__name');
+  categoryButton.textContent = category.name;
+  categoryButton.addEventListener('click', () => {
+    toggleCategory(categoryButton);
   });
-  buttonDelete.addEventListener('click', (evt) => {
-    evt.target.closest('.card').parentElement.remove();
-    renderAdded();
-  });
-  imageDarkening.addEventListener('click', (evt) => {
-    openPopupViewCard(evt.target.closest('.card'));
-  });*/
-  return newCard;
-};
+  return categoryItemContainer;
+}
 
-const addCardToBegin = (cardsContainer, card) => {
-  cardsContainer.prepend(card);
-};
+const toggleCategory = (category) => {
+  category.classList.toggle('categoryList__name_active');
+  //TO DO: update initiatives list
+}
 
-const addInitialCards = (initialCards, container) => {
-  initialCards.reverse().forEach((item) => { 
-    addCardToBegin(container, createInitiativeCard(item));
-  });
-};
+categories.forEach((category) => {
+  categoryListContainer.append(createCategoryItem(category));
+});
 
-addInitialCards(commonInitiatives, commonCardsContainer);
-addInitialCards(customInitiatives, customCardsContainer);
+addInitiativeCards(commonInitiatives, commonCardsContainer);
+addInitiativeCards(customInitiatives, customCardsContainer);
