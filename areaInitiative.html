@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Гражданские инициативы</title>
+  <title>Мой раон</title>
+  <link rel="icon" href="./images/logo.svg">
   <link rel="stylesheet" href="./pages/areaInitiative.css">
 </head>
 <body class="page">
-  <header class="header page__header">
-    <div class="header__buttonsLine">
-      <button class="header__button header__button_visible header__button_type_menu" type="button"></button>
-      <a class="header__logo" href="./index.html"></a>
-      <button class="header__button header__button_visible header__button_type_search" type="button"></button>
-    </div>
-    <nav class="header__menu menu">
+  <div class="page__content">
+    <header class="header page__header">
+      <div class="header__buttonsLine">
+        <button class="header__button header__button_visible header__button_type_menu" type="button"></button>
+        <a class="header__logo" href="./index.html"></a>
+        <button class="header__button header__button_visible header__button_type_search" type="button"></button>
+      </div>
+    </header>
+
+    <nav class="page__menu menu">
       <ul class="menu__list">
         <li class="menu__item">
           <a class="menu__link" href="./profile.html">Профиль</a>
@@ -27,6 +31,9 @@
           <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
         </li>
         <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
           <a class="menu__link" href="./info.html">Информация</a>
         </li>
         <li class="menu__item">
@@ -34,21 +41,12 @@
         </li>
       </ul>
     </nav>
-  </header>
   
     <main class="main">
-      <section class="section page__section intro">
-        <h1 class="page__title">Мой район</h1>
+      <section class="intro">
+        <h1 class="intro__item">Мой раон</h1>
       </section>
-
-      <section class="section page__section" aria-label="поиск">
-        <form class="search" name="search">
-          <input class="search__input" type="text">
-          <button class="search__filter" type="button"></button>
-        </form>
-      </section>
-    
-      <section class="section page__section initiatives initiativesCommon">
+      <section class="section page__section initiatives initiatives_type_common">
         <h2 class="section__title">Активные</h2>
         <ul class="initiatives__list initiativesCommon__list"></ul>
       </section>
@@ -57,24 +55,22 @@
         <h2 class="section__title">Закрытые</h2>
         <ul class="initiatives__list initiativesCustom__list"></ul>
       </section>
-    
-      <section class="addInitiative page__downButton" aria-label="Кнопка перехода к созданию инициативы">
-        <a class="link button button_big button_type_addInitiative" href="./addInitiative.html">Создать инициативу</a>
+
+      <section class="page__downButton" aria-label="Создать инициативу">
+        <a class="button button_blue" href="./createInitiative.html">Создать инициативу</a>
       </section>
     </main>
   
     <template class="templeteInitiativeCard">
       <li class="initiatives__item">
         <article class="initiativeCard">
-          <figure class="initiativeCard__figure">
-            <div class="initiativeCard__boxImage">
-              <img class="initiativeCard__image" src="#" alt="photo">
-            </div>
-            <figcaption class="initiativeCard__figcaption">
-              <h3 class="initiativeCard__title"></h3>
-              <p class="initiativeCard__text"></p>
-            </figcaption>
-          </figure>
+          <img class="initiativeCard__image" src="#" alt="photo">
+          <div class="initiativeCard__info">
+            <h3 class="initiativeCard__title"></h3>
+            <p class="initiativeCard__qoute"></p>
+            <p class="initiativeCard__date"></p>
+            <div class="initiativeCard__type"></div>
+          </div>
         </article>
         <a class="initiatives__link" href="./initiative.html"></a>
       </li>
@@ -85,6 +81,9 @@
   </div>
 
   <script src="./scripts/header.js"></script>
-  <script src="./scripts/index.js"></script>
+  <script src="./scripts/dataInitiatives.js"></script>
+  <script src="./scripts/addInitiativeCards.js"></script>
+  <script src="./scripts/areaInitiative.js"></script>
+</body>
 </body>
 </html>

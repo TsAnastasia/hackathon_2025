@@ -3,8 +3,12 @@
 
 @import url("../blocks/page/page.css");
 @import url("../blocks/page/__content/page__content.css");
+@import url("../blocks/page/__content/_darking/page__content_darking.css");
 @import url("../blocks/page/__header/page__header.css");
+@import url("../blocks/page/__menu/page__menu.css");
+@import url("../blocks/page/__menu/_visible/page__menu_visible.css");
 @import url("../blocks/page/__section/page__section.css");
+@import url("../blocks/page/__downButton/page__downButton.css");
 
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__buttonsLine/header__buttonsLine.css");
@@ -12,10 +16,28 @@
 @import url("../blocks/header/__button/header__button.css");
 @import url("../blocks/header/__button/_type/header__button_type_menu.css");
 @import url("../blocks/header/__button/_type/header__button_type_search.css");
-@import url("../blocks/header/__menu/header__menu.css");
-@import url("../blocks/header/__menu/_visible/header__menu_visible.css");
 
 @import url("../blocks/menu/__list/menu__list.css");
 @import url("../blocks/menu/__item/menu__item.css");
 @import url("../blocks/menu/__link/menu__link.css");
 @import url("../blocks/menu/__count/menu__count.css");
+
+@import url("../blocks/section/__title/section__title.css");
+
+@import url("../blocks/button/button.css");
+@import url("../blocks/button/_blue/button_blue.css");
+
+@import url("../blocks/initiatives/__list/initiatives__list.css");
+@import url("../blocks/initiatives/__item/initiatives__item.css");
+@import url("../blocks/initiatives/__link/initiatives__link.css");
+
+@import url("../blocks/initiativeCard/initiativeCard.css");
+@import url("../blocks/initiativeCard/__image/initiativeCard__image.css");
+@import url("../blocks/initiativeCard/__info/initiativeCard__info.css");
+@import url("../blocks/initiativeCard/__title/initiativeCard__title.css");
+@import url("../blocks/initiativeCard/__qoute/initiativeCard__qoute.css");
+@import url("../blocks/initiativeCard/__date/initiativeCard__date.css");
+@import url("../blocks/initiativeCard/__type/initiativeCard__type.css");
+@import url("../blocks/initiativeCard/__type/_value/initiativeCard__type_value_complaint.css");
+@import url("../blocks/initiativeCard/__type/_value/initiativeCard__type_value_offer.css");
+@import url("../blocks/initiativeCard/__type/_value/initiativeCard__type_value_gratitude.css");
