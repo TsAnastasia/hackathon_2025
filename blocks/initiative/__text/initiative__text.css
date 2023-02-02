@@ -1,0 +1,13 @@
+.initiative__text{
+  margin: 0;
+  padding: 14px 16px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #737A92;
+  background-color: #e2e4eb;
+  border-radius: 8px;
+  overflow-y: scroll;
+}

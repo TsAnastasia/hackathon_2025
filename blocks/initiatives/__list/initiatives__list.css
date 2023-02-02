@@ -1,0 +1,22 @@
+.initiatives__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  overflow-x: scroll;
+}
+
+.initiatives__list:empty::after{
+  margin: 0 10px;
+  padding: 0;
+  content: "Ничего не найдено";
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #737a92;
+}

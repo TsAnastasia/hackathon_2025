@@ -1,0 +1,1 @@
+addInitiativeCards(customInitiatives, customCardsContainer);

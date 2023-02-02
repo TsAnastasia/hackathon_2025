@@ -1,0 +1,12 @@
+.initiativeCard__title{
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 600; 
+  color: #1d1d1f;
+}

@@ -1,0 +1,12 @@
+.menu__item{
+  margin: 0;
+  padding: 8px 0 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid #e2e4eb;
+}
+
+.menu__item:last-child{
+  border-bottom: 0;
+}

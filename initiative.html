@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Просмотр инициативы</title>
+  <link rel="icon" href="./images/logo.svg">
+  <link rel="stylesheet" href="./pages/initiative.css">
+</head>
+<body class="page">
+  <div class="page__content">
+    <header class="header page__header">
+      <div class="header__buttonsLine">
+        <button class="header__button header__button_visible header__button_type_menu" type="button"></button>
+        <a class="header__logo" href="./index.html"></a>
+        <button class="header__button header__button_visible header__button_type_search" type="button"></button>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__element">
+            <button class="nav__item nav__item_type_category" type="button">Категории</button>
+          </li>
+          <li class="nav__element">
+            <p class="nav__item nav__item_disable nav__item_type_initiative">Просмотр инициативы</p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./profile.html">Профиль</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./alert.html">Оповещения</a>
+          <a class="menu__count menu__count_type_alert" href="./alert.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./personInitiative.html">Мои инициативы</a>
+          <a class="menu__count menu__count_type_initiatives" href="./personInitiative.html"></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./createInitiative.html">Добавить инициативу</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./info.html">Информация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./setting.html">Настройки</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main" aria-label="Добавление инициативы">
+      <section class="page__section initiative">
+        <h1 class="initiative__title"></h1>
+        <p class="initiative__date"></p>
+        <p class="initiative__type"></p>
+        <p class="initiative__status"></p>
+        <p class="initiative__adress"></p>
+        <ul class="initiative__images"></ul>
+        <div class="initiative__text"></div>
+        <div class="initiative__buttons">
+          <div class="initiative__buttonsGroup">
+            <button class="initiative__button initiative__button_type_share" type="button"></button>
+            <button class="initiative__like" type="button">225</button>
+          </div>
+          <button class="initiative__button initiative__button_type_file" type="button"></button>
+          <ul class="initiative__files"></ul>
+        </div>
+      </section>
+
+      <section class="page__section comments">
+        <h2 class="comments__title">Комментарии</h2>
+        <ul class="comments__list"></ul>
+        <form class="comments__form addComment" novalidate>
+          <input class="addComment__text" type="text" placeholder="Добавить комментарий" maxlength="140" pattern="^[А-Яа-яЁё\s]+$" required>
+          <button class="addComment__button" type="submit" disabled></button>
+        </form>
+      </section>
+    </main>
+
+    <template class="templateInitiativeImage">
+      <li>
+        <img class="initiative__image" src="#" alt="photo">
+      </li>
+    </template>
+
+    <template class="templateInitiativeFile">
+      <li class="initiative__fileItem">
+        <p class="initiative__fileType"></p>
+        <div class="initiative__fileInfo">
+          <p class="initiative__fileName"></p>
+          <p class="initiative__fileSize"></p>
+        </div>
+      </li>
+    </template>
+
+    <template class="templateInitiativeComment">
+      <li>
+        <article class="comment">
+          <div class="comment__avatar"></div>
+          <div class="comment__text">
+            <h3 class="comment__author"></h3>
+            <p class="comment__qoute"></p>
+            <p class="comment__date"></p>
+          </div>
+        </article>
+      </li>
+    </template>
+    
+    <footer class="footer page__footer">
+    </footer>
+  </div>
+
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/dataInitiative.js"></script>
+  <script src="./scripts/initiative.js"></script>
+</body>
+</html>

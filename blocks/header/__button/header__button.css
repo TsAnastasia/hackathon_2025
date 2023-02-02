@@ -1,0 +1,17 @@
+.header__button{
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: 0;
+  border: 0;
+  color: #000;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

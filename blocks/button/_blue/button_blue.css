@@ -1,0 +1,15 @@
+.button_blue{
+  border: 0;
+  color: #fff;
+  background-color: #19488e;
+}
+
+.button_blue:active{
+  background-color: #97b2dF;
+}
+
+.button_blue:disabled{
+  color: #1d1d1f;
+  background-color: #e2e4eb;
+  box-shadow: none;
+}

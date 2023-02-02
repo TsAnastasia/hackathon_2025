@@ -1,0 +1,10 @@
+.initiativeCard__type{
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 50%;
+}

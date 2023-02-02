@@ -1,0 +1,17 @@
+.initiativeCard__qoute{
+  margin: 8px 0;
+  padding: 0;
+  min-height: 54px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: pre-line;
+  text-overflow: -o-ellipsis-lastline;
+  word-break: break-word;
+  color: #737a92;
+  overflow: hidden;
+}

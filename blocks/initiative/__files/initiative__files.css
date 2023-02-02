@@ -1,0 +1,15 @@
+.initiative__files{
+  margin: 0;
+  padding: 16px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  list-style: none;
+  border-radius: 8px;
+  background-color: #fff;
+  z-index: 500;
+}

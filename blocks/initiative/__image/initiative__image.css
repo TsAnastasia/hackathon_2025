@@ -1,0 +1,8 @@
+.initiative__image{
+  width: 180px;
+  height: 110px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+}

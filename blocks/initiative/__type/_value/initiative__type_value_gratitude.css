@@ -1,0 +1,7 @@
+.initiative__type_value_gratitude{
+  background-color: #419d78;
+}
+
+.initiative__type_value_gratitude::after{
+  content: "Благодарность";
+}
